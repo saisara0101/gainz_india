@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sell Your Old Laptop &amp; Desktop | Gainz India Peripherals Private Limited</title>
+  <meta name="description" content="Sell your used laptop, desktop or IT equipment to Gainz India Peripherals Private Limited. Professional evaluation, transparent quotation and simple selling process." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            dell: {
+              50: '#eff8ff', 100: '#dbeafe', 200: '#bfdbfe',
+              500: '#0076CE', 600: '#0062ab', 700: '#004f8a',
+              800: '#003a66', 900: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .dot-grid {
+      background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .glass-card {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #0b1329 0%, #0d1f3c 50%, #0b2240 100%);
+    }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; }
+    .faq-answer.open { max-height: 500px; }
+    .faq-icon { transition: transform 0.3s ease; }
+    .faq-icon.open { transform: rotate(45deg); }
+    input[type="file"]::-webkit-file-upload-button { display: none; }
+    input[type="file"]::file-selector-button { display: none; }
+    .form-input {
+      border: 1px solid #e2e8f0;
+      border-radius: 0.5rem;
+      padding: 0.625rem 1rem;
+      width: 100%;
+      font-size: 0.875rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #1e293b;
+      background: #fff;
+    }
+    .form-input:focus {
+      border-color: #0076CE;
+      box-shadow: 0 0 0 3px rgba(0,118,206,0.15);
+    }
+    .form-input.error {
+      border-color: #ef4444;
+      box-shadow: 0 0 0 3px rgba(239,68,68,0.12);
+    }
+    .form-label {
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 0.375rem;
+    }
+    .category-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .category-card:hover { transform: translateY(-5px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+    .why-card { transition: transform 0.25s ease; }
+    .why-card:hover { transform: translateY(-4px); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="bg-[#0b1329] text-white py-2 px-4 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
+      <span class="text-center sm:text-left">💚 Sell Your Old Laptop &amp; Get the Best Value — Gainz India Buys Used IT Equipment</span>
+      <div class="flex items-center gap-4 shrink-0">
+        <a href="tel:+917200521950" class="flex items-center gap-1.5 hover:text-emerald-400 transition-colors">
+          <i class="fa-solid fa-phone text-emerald-400 text-[10px]"></i>
+          <span>(+91) 72005 21950</span>
+        </a>
+        <a href="https://wa.me/917200521950" target="_blank" rel="noopener" class="flex items-center gap-1.5 hover:text-emerald-400 transition-colors">
+          <i class="fa-brands fa-whatsapp text-emerald-400 text-[11px]"></i>
+          <span>7200521950</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== STICKY GLASS NAV ===== -->
+  <nav class="glass-nav sticky top-0 z-50 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+          <div class="w-9 h-9 bg-emerald-600 rounded-lg flex items-center justify-center shadow-lg">
+            <span class="text-white font-black text-lg leading-none">G</span>
+          </div>
+          <div class="leading-tight">
+            <div class="text-white font-bold text-sm tracking-wide">GAINZ INDIA</div>
+            <div class="text-slate-400 text-[9px] font-medium tracking-wider uppercase">Peripherals Private Limited</div>
+          </div>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html" class="text-slate-300 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-white/10">Home</a>
+          <a href="buy.html" class="text-slate-300 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-white/10">BUY</a>
+          <a href="sell.html" class="bg-emerald-600/20 text-emerald-400 border border-emerald-500/40 px-4 py-2 rounded-lg text-sm font-bold transition-colors">SELL</a>
+          <a href="service.html" class="text-sky-400 hover:text-sky-300 px-4 py-2 rounded-lg text-sm font-semibold transition-colors hover:bg-white/10 flex items-center gap-1"><i class="fa-solid fa-screwdriver-wrench text-xs"></i> SERVICE</a>
+          <a href="https://gainzindia.com/contactus" target="_blank" rel="noopener" class="text-slate-300 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-white/10">Contact</a>
+        </div>
+
+        <!-- Desktop CTA Buttons -->
+        <div class="hidden md:flex items-center gap-2">
+          <a href="https://gainzindia.com/contactus" target="_blank" rel="noopener" class="border border-slate-500 text-slate-200 hover:border-white hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">Get a Quote</a>
+          <a href="https://wa.me/917200521950" target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors flex items-center gap-1.5">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="menu-btn" class="md:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Open menu">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-[#0b1329]">
+      <div class="px-4 py-4 flex flex-col gap-2">
+        <a href="index.html" class="text-slate-300 hover:text-white px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-white/10 transition-colors">Home</a>
+        <a href="buy.html" class="text-slate-300 hover:text-white px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-white/10 transition-colors">BUY</a>
+        <a href="sell.html" class="bg-emerald-600/20 text-emerald-400 border border-emerald-500/40 px-4 py-2.5 rounded-lg text-sm font-bold">SELL</a>
+        <a href="service.html" class="text-sky-400 hover:text-sky-300 px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-white/10 transition-colors flex items-center gap-1"><i class="fa-solid fa-screwdriver-wrench text-xs"></i> SERVICE</a>
+        <a href="https://gainzindia.com/contactus" target="_blank" rel="noopener" class="text-slate-300 hover:text-white px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-white/10 transition-colors">Contact</a>
+        <div class="flex gap-2 pt-2 border-t border-white/10 mt-1">
+          <a href="https://gainzindia.com/contactus" target="_blank" rel="noopener" class="flex-1 text-center border border-slate-500 text-slate-200 px-3 py-2 rounded-lg text-sm font-semibold hover:border-white transition-colors">Get a Quote</a>
+          <a href="https://wa.me/917200521950" target="_blank" rel="noopener" class="flex-1 text-center bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-2 rounded-lg text-sm font-semibold transition-colors">
+            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== SECTION 1: HERO ===== -->
+  <section class="hero-gradient dot-grid relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 right-20 w-96 h-96 bg-dell-500/10 rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Left -->
+        <div>
+          <div class="inline-flex items-center gap-2 bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
+            🔄 We Buy Pre-Owned IT Equipment
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-5">
+            Sell Your Old Laptop.<br />
+            <span class="bg-gradient-to-r from-emerald-400 to-emerald-300 bg-clip-text text-transparent">Get the Best Possible Value.</span>
+          </h1>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
+            Looking to upgrade your technology? Sell your used laptops, desktops and IT equipment to Gainz India. Share your product details and let our team evaluate your device and provide a quotation.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#sell-form" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-emerald-900/40 text-sm">
+              <i class="fa-solid fa-tag"></i> SELL YOUR DEVICE
+            </a>
+            <a href="#sell-form" class="inline-flex items-center gap-2 border-2 border-emerald-500/50 text-emerald-300 hover:bg-emerald-600/20 font-bold px-6 py-3 rounded-xl transition-all text-sm">
+              <i class="fa-solid fa-magnifying-glass"></i> GET A FREE EVALUATION
+            </a>
+            <a href="https://wa.me/917200521950?text=Hi%2C%20I%20want%20to%20sell%20my%20laptop" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-3 rounded-xl transition-all text-sm">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i> WhatsApp Us
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Stats Card -->
+        <div class="glass-card rounded-2xl p-7 border-emerald-500/20 max-w-sm mx-auto lg:mx-0 w-full">
+          <div class="flex items-center gap-2 mb-6">
+            <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center">
+              <i class="fa-solid fa-rotate text-white text-sm"></i>
+            </div>
+            <span class="text-white font-bold text-sm">Why Sell to Gainz India?</span>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-white/10">
+              <div class="w-8 h-8 rounded-full bg-emerald-600/30 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-layer-group text-emerald-400 text-xs"></i>
+              </div>
+              <span class="text-slate-200 text-sm font-medium">We Accept Multiple Brands</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-white/10">
+              <div class="w-8 h-8 rounded-full bg-emerald-600/30 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-scale-balanced text-emerald-400 text-xs"></i>
+              </div>
+              <span class="text-slate-200 text-sm font-medium">Fair Market Valuation</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-white/10">
+              <div class="w-8 h-8 rounded-full bg-emerald-600/30 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-user-tie text-emerald-400 text-xs"></i>
+              </div>
+              <span class="text-slate-200 text-sm font-medium">Professional Evaluation</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-white/10">
+              <div class="w-8 h-8 rounded-full bg-emerald-600/30 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-file-contract text-emerald-400 text-xs"></i>
+              </div>
+              <span class="text-slate-200 text-sm font-medium">Transparent Quotation</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-white/10">
+              <div class="w-8 h-8 rounded-full bg-emerald-600/30 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-boxes-stacked text-emerald-400 text-xs"></i>
+              </div>
+              <span class="text-slate-200 text-sm font-medium">Bulk Selling Welcome</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: WHAT CAN YOU SELL? ===== -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+          <i class="fa-solid fa-box-open"></i> Pre-Owned IT Equipment
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">We Buy Pre-Owned IT Equipment</h2>
+        <p class="text-slate-500 text-base max-w-2xl mx-auto">Submit an enquiry for the following categories — subject to evaluation and condition</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="category-card bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 text-2xl">💻</div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Used Dell Laptops</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">Business, Gaming and Consumer series</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="category-card bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 text-2xl">💻</div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Used HP Laptops</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">Consumer and enterprise models</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="category-card bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 text-2xl">💻</div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Used Lenovo Laptops</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">ThinkPad, IdeaPad and more</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="category-card bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 text-2xl">💻</div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Used Acer Laptops</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">Aspire, Swift and other series</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="category-card bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 text-2xl">🍎</div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Used Apple MacBooks</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">MacBook Air and MacBook Pro</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="category-card bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 text-2xl">🖥️</div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Desktop Computers</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">All-in-One and tower configurations</p>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="category-card bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 text-2xl">⚙️</div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Workstations</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">Professional computing systems</p>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="category-card bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 text-2xl">🖨️</div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Monitors</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">External displays and screens</p>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="category-card bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 text-2xl">📦</div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Bulk IT Equipment</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">Multiple units from offices and institutions</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-center text-slate-400 text-xs mt-8 italic">* Acceptance subject to product category, physical condition and evaluation by our team.</p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: HOW IT WORKS ===== -->
+  <section class="bg-slate-100 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <div class="inline-flex items-center gap-2 bg-dell-50 border border-dell-200 text-dell-600 text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+          <i class="fa-solid fa-list-ol"></i> Simple Process
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Sell Your Device in 4 Easy Steps</h2>
+      </div>
+
+      <!-- Steps -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+        <!-- Connector line (desktop only) -->
+        <div class="hidden md:block absolute top-14 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-emerald-300 via-emerald-400 to-emerald-300 z-0"></div>
+
+        <!-- Step 1 -->
+        <div class="relative z-10 flex flex-col items-center text-center bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+          <div class="w-16 h-16 rounded-full bg-emerald-100 border-4 border-white shadow-md flex items-center justify-center mb-4 text-2xl">📋</div>
+          <div class="w-6 h-6 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center mb-3">1</div>
+          <h3 class="font-bold text-slate-800 text-sm mb-2">Submit Your Device Details</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Fill out our simple online form with your laptop or desktop information.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative z-10 flex flex-col items-center text-center bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+          <div class="w-16 h-16 rounded-full bg-emerald-100 border-4 border-white shadow-md flex items-center justify-center mb-4 text-2xl">🔍</div>
+          <div class="w-6 h-6 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center mb-3">2</div>
+          <h3 class="font-bold text-slate-800 text-sm mb-2">Device Evaluation</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Our team reviews the product details, condition, specifications and market value.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative z-10 flex flex-col items-center text-center bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+          <div class="w-16 h-16 rounded-full bg-emerald-100 border-4 border-white shadow-md flex items-center justify-center mb-4 text-2xl">💬</div>
+          <div class="w-6 h-6 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center mb-3">3</div>
+          <h3 class="font-bold text-slate-800 text-sm mb-2">Receive Your Quotation</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Our team contacts you with a quotation after evaluation.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative z-10 flex flex-col items-center text-center bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+          <div class="w-16 h-16 rounded-full bg-emerald-100 border-4 border-white shadow-md flex items-center justify-center mb-4 text-2xl">✅</div>
+          <div class="w-6 h-6 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center mb-3">4</div>
+          <h3 class="font-bold text-slate-800 text-sm mb-2">Complete the Sale</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">If you accept the quotation, our team coordinates the next steps, device handover and payment process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: SELL ENQUIRY FORM ===== -->
+  <section id="sell-form" class="bg-white py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <div class="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+          <i class="fa-solid fa-clipboard-list"></i> Sell Enquiry Form
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">Get a Valuation for Your Laptop or Desktop</h2>
+        <p class="text-slate-500 text-sm max-w-xl mx-auto">Fill in your details and our team will evaluate your device and get back to you with a quotation.</p>
+      </div>
+
+      <!-- Success Message -->
+      <div id="success-message" class="hidden mb-8 bg-emerald-50 border border-emerald-200 rounded-2xl p-6 text-center">
+        <div class="text-3xl mb-3">✅</div>
+        <h3 class="text-emerald-800 font-bold text-lg mb-1">Enquiry Submitted Successfully!</h3>
+        <p class="text-emerald-700 text-sm">Our team will evaluate your device and contact you shortly. For faster response, WhatsApp us at <a href="https://wa.me/917200521950" class="font-bold underline">7200521950</a>.</p>
+      </div>
+
+      <!-- Form -->
+      <form id="sell-enquiry-form" action="https://formsubmit.co/sales@gainzindia.com" method="POST" enctype="multipart/form-data" novalidate class="bg-white rounded-2xl border border-slate-100 shadow-lg overflow-hidden">
+
+        <!-- Hidden Fields -->
+        <input type="hidden" name="_subject" value="New Sell Enquiry - Gainz India" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="http://localhost:8000/sell.html?submitted=true" />
+        <input type="text" name="_honey" style="display:none" />
+
+        <!-- Personal Details -->
+        <div class="bg-slate-50 border-b border-slate-100 px-6 py-4 flex items-center gap-2">
+          <i class="fa-solid fa-user text-emerald-600 text-sm"></i>
+          <span class="font-bold text-slate-700 text-sm uppercase tracking-wide">Personal Details</span>
+        </div>
+        <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <!-- Full Name -->
+          <div class="sm:col-span-2 sm:col-span-1">
+            <label for="full_name" class="form-label">Full Name <span class="text-red-500">*</span></label>
+            <input type="text" id="full_name" name="full_name" class="form-input" placeholder="Enter your full name" required />
+            <p class="error-msg hidden text-red-500 text-xs mt-1">Please enter your full name.</p>
+          </div>
+          <!-- Mobile Number -->
+          <div>
+            <label for="mobile" class="form-label">Mobile Number <span class="text-red-500">*</span></label>
+            <input type="tel" id="mobile" name="mobile" class="form-input" placeholder="+91 XXXXX XXXXX" required />
+            <p class="error-msg hidden text-red-500 text-xs mt-1">Please enter your mobile number.</p>
+          </div>
+          <!-- Email -->
+          <div>
+            <label for="email" class="form-label">Email Address <span class="text-red-500">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="yourname@email.com" required />
+            <p class="error-msg hidden text-red-500 text-xs mt-1">Please enter a valid email address.</p>
+          </div>
+          <!-- City -->
+          <div>
+            <label for="city" class="form-label">City <span class="text-red-500">*</span></label>
+            <input type="text" id="city" name="city" class="form-input" placeholder="Your city" required />
+            <p class="error-msg hidden text-red-500 text-xs mt-1">Please enter your city.</p>
+          </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="bg-slate-50 border-t border-b border-slate-100 px-6 py-4 flex items-center gap-2">
+          <i class="fa-solid fa-laptop text-emerald-600 text-sm"></i>
+          <span class="font-bold text-slate-700 text-sm uppercase tracking-wide">Product Details</span>
+        </div>
+        <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <!-- Product Category -->
+          <div>
+            <label for="product_category" class="form-label">Product Category <span class="text-red-500">*</span></label>
+            <select id="product_category" name="product_category" class="form-input" required>
+              <option value="">— Select Category —</option>
+              <option value="Laptop">Laptop</option>
+              <option value="Desktop">Desktop</option>
+              <option value="Workstation">Workstation</option>
+              <option value="Monitor">Monitor</option>
+              <option value="Other">Other</option>
+            </select>
+            <p class="error-msg hidden text-red-500 text-xs mt-1">Please select a product category.</p>
+          </div>
+          <!-- Brand -->
+          <div>
+            <label for="brand" class="form-label">Brand <span class="text-red-500">*</span></label>
+            <select id="brand" name="brand" class="form-input" required>
+              <option value="">— Select Brand —</option>
+              <option value="Dell">Dell</option>
+              <option value="HP">HP</option>
+              <option value="Lenovo">Lenovo</option>
+              <option value="Apple">Apple</option>
+              <option value="Acer">Acer</option>
+              <option value="Other">Other</option>
+            </select>
+            <p class="error-msg hidden text-red-500 text-xs mt-1">Please select a brand.</p>
+          </div>
+          <!-- Model Number -->
+          <div class="sm:col-span-2">
+            <label for="model_number" class="form-label">Model Number <span class="text-red-500">*</span></label>
+            <input type="text" id="model_number" name="model_number" class="form-input" placeholder="e.g. Dell Inspiron 15 3511, ThinkPad E14 Gen 4" required />
+            <p class="error-msg hidden text-red-500 text-xs mt-1">Please enter the model number.</p>
+          </div>
+          <!-- Processor -->
+          <div>
+            <label for="processor" class="form-label">Processor</label>
+            <input type="text" id="processor" name="processor" class="form-input" placeholder="e.g. Intel Core i5-11th Gen" />
+          </div>
+          <!-- RAM -->
+          <div>
+            <label for="ram" class="form-label">RAM</label>
+            <select id="ram" name="ram" class="form-input">
+              <option value="">— Select RAM —</option>
+              <option value="4GB">4GB</option>
+              <option value="8GB">8GB</option>
+              <option value="16GB">16GB</option>
+              <option value="32GB">32GB</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <!-- Storage -->
+          <div>
+            <label for="storage" class="form-label">Storage</label>
+            <select id="storage" name="storage" class="form-input">
+              <option value="">— Select Storage —</option>
+              <option value="128GB SSD">128GB SSD</option>
+              <option value="256GB SSD">256GB SSD</option>
+              <option value="512GB SSD">512GB SSD</option>
+              <option value="1TB SSD">1TB SSD</option>
+              <option value="HDD">HDD</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <!-- Purchase Year -->
+          <div>
+            <label for="purchase_year" class="form-label">Purchase Year</label>
+            <select id="purchase_year" name="purchase_year" class="form-input">
+              <option value="">— Select Year —</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="Earlier">Earlier</option>
+            </select>
+          </div>
+          <!-- Product Condition -->
+          <div>
+            <label for="condition" class="form-label">Product Condition <span class="text-red-500">*</span></label>
+            <select id="condition" name="condition" class="form-input" required>
+              <option value="">— Select Condition —</option>
+              <option value="Excellent - Like New">Excellent — Like New</option>
+              <option value="Good - Minor Wear">Good — Minor Wear</option>
+              <option value="Average - Visible Wear">Average — Visible Wear</option>
+              <option value="Needs Repair">Needs Repair</option>
+            </select>
+            <p class="error-msg hidden text-red-500 text-xs mt-1">Please select the product condition.</p>
+          </div>
+          <!-- Warranty Status -->
+          <div>
+            <label for="warranty" class="form-label">Warranty Status</label>
+            <select id="warranty" name="warranty" class="form-input">
+              <option value="">— Select Status —</option>
+              <option value="Under Warranty">Under Warranty</option>
+              <option value="Out of Warranty">Out of Warranty</option>
+              <option value="Not Sure">Not Sure</option>
+            </select>
+          </div>
+          <!-- Expected Selling Price -->
+          <div>
+            <label for="expected_price" class="form-label">Expected Selling Price <span class="text-slate-400 font-normal">(Optional)</span></label>
+            <input type="text" id="expected_price" name="expected_price" class="form-input" placeholder="e.g. ₹25,000" />
+          </div>
+        </div>
+
+        <!-- Additional Details -->
+        <div class="bg-slate-50 border-t border-b border-slate-100 px-6 py-4 flex items-center gap-2">
+          <i class="fa-solid fa-circle-info text-emerald-600 text-sm"></i>
+          <span class="font-bold text-slate-700 text-sm uppercase tracking-wide">Additional Details</span>
+        </div>
+        <div class="p-6 grid grid-cols-1 gap-5">
+          <!-- Upload Images -->
+          <div>
+            <label class="form-label">Upload Product Images</label>
+            <label for="product_images" class="flex flex-col items-center justify-center gap-2 border-2 border-dashed border-slate-200 rounded-xl px-6 py-8 cursor-pointer hover:border-emerald-400 hover:bg-emerald-50 transition-colors group">
+              <div class="w-12 h-12 rounded-full bg-slate-100 group-hover:bg-emerald-100 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-cloud-arrow-up text-slate-400 group-hover:text-emerald-600 text-xl transition-colors"></i>
+              </div>
+              <div class="text-center">
+                <p class="text-slate-600 text-sm font-medium">Click to upload product images</p>
+                <p class="text-slate-400 text-xs mt-0.5">PNG, JPG, JPEG up to 10MB each</p>
+              </div>
+              <input type="file" id="product_images" name="product_images" accept="image/*" multiple class="hidden" />
+            </label>
+            <p id="file-names" class="text-slate-500 text-xs mt-2 hidden"></p>
+          </div>
+          <!-- Additional Info -->
+          <div>
+            <label for="additional_info" class="form-label">Additional Information</label>
+            <textarea id="additional_info" name="additional_info" rows="4" class="form-input resize-none" placeholder="Any other details about the product, accessories included, issues if any..."></textarea>
+          </div>
+        </div>
+
+        <!-- Consent -->
+        <div class="px-6 pb-6">
+          <label class="flex items-start gap-3 cursor-pointer">
+            <input type="checkbox" id="consent" name="consent" class="mt-0.5 w-4 h-4 accent-emerald-600 shrink-0" required />
+            <span class="text-slate-600 text-xs leading-relaxed">I confirm that the information provided is accurate and I agree to be contacted by Gainz India regarding my selling enquiry.</span>
+          </label>
+          <p id="consent-error" class="hidden text-red-500 text-xs mt-1 ml-7">Please accept the terms to continue.</p>
+        </div>
+
+        <!-- Submit -->
+        <div class="px-6 pb-8">
+          <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-8 rounded-xl text-base transition-all shadow-lg shadow-emerald-900/20 flex items-center justify-center gap-2">
+            GET MY DEVICE VALUATION <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: WHY SELL TO GAINZ INDIA? ===== -->
+  <section class="bg-[#0b1329] py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+          <i class="fa-solid fa-star"></i> Why Choose Us
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">A Smarter Way to Sell Your Old IT Equipment</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Card 1 -->
+        <div class="why-card glass-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 rounded-full bg-emerald-600/30 border border-emerald-500/30 flex items-center justify-center mx-auto mb-5 text-2xl">🔍</div>
+          <h3 class="text-white font-bold text-sm mb-2">Professional Evaluation</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Our team evaluates your device based on its specifications and physical condition.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card glass-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 rounded-full bg-emerald-600/30 border border-emerald-500/30 flex items-center justify-center mx-auto mb-5 text-2xl">💬</div>
+          <h3 class="text-white font-bold text-sm mb-2">Transparent Quotation</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Receive a quotation based on the device's condition and prevailing market value.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card glass-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 rounded-full bg-emerald-600/30 border border-emerald-500/30 flex items-center justify-center mx-auto mb-5 text-2xl">📋</div>
+          <h3 class="text-white font-bold text-sm mb-2">Simple Process</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Submit your device details through an easy online enquiry form.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="why-card glass-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 rounded-full bg-emerald-600/30 border border-emerald-500/30 flex items-center justify-center mx-auto mb-5 text-2xl">🤝</div>
+          <h3 class="text-white font-bold text-sm mb-2">Trusted IT Partner</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Deal with an experienced computer hardware and IT solutions company.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: BULK SELLING CTA BANNER ===== -->
+  <section class="bg-gradient-to-r from-emerald-700 to-emerald-900 py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <div class="inline-flex items-center gap-2 bg-white/15 border border-white/25 text-emerald-100 text-xs font-semibold px-4 py-1.5 rounded-full mb-5">
+        <i class="fa-solid fa-boxes-stacked"></i> Bulk Selling
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-5">Have Multiple Laptops or Desktops to Sell?</h2>
+      <p class="text-emerald-100 text-base leading-relaxed mb-8 max-w-3xl mx-auto">
+        Planning to upgrade your office IT infrastructure? Gainz India welcomes enquiries from businesses, corporates, educational institutions and organisations looking to sell their used IT equipment in bulk. We can evaluate bulk requirements and provide a quotation based on the product details, quantity and condition.
+      </p>
+      <a href="#sell-form" class="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-emerald-800 font-bold px-8 py-3.5 rounded-xl transition-all text-sm">
+        <i class="fa-solid fa-boxes-stacked"></i> SUBMIT BULK SELLING ENQUIRY
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7: FAQ ACCORDION ===== -->
+  <section class="bg-white py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-slate-100 border border-slate-200 text-slate-600 text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+          <i class="fa-solid fa-circle-question"></i> FAQ
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-3" id="faq-container">
+
+        <!-- FAQ 1 -->
+        <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors">
+            <span class="font-semibold text-slate-800 text-sm">Can I sell my old laptop to Gainz India?</span>
+            <i class="faq-icon fa-solid fa-plus text-emerald-600 text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-5 pb-4 text-slate-500 text-sm leading-relaxed">Yes, Gainz India accepts enquiries for pre-owned laptops, desktops and other IT equipment, subject to product condition and evaluation.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors">
+            <span class="font-semibold text-slate-800 text-sm">Which laptop brands do you accept?</span>
+            <i class="faq-icon fa-solid fa-plus text-emerald-600 text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-5 pb-4 text-slate-500 text-sm leading-relaxed">We accept Dell, HP, Lenovo, Acer, Apple and other major brands, subject to evaluation.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors">
+            <span class="font-semibold text-slate-800 text-sm">Can I sell a damaged or non-working laptop?</span>
+            <i class="faq-icon fa-solid fa-plus text-emerald-600 text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-5 pb-4 text-slate-500 text-sm leading-relaxed">We evaluate each device individually. Contact our team to discuss the condition of your device before submitting an enquiry.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors">
+            <span class="font-semibold text-slate-800 text-sm">How is my laptop's resale value calculated?</span>
+            <i class="faq-icon fa-solid fa-plus text-emerald-600 text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-5 pb-4 text-slate-500 text-sm leading-relaxed">Our team evaluates the device based on its brand, model, age, specifications, physical condition and prevailing market rates.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors">
+            <span class="font-semibold text-slate-800 text-sm">Can I sell multiple laptops in bulk?</span>
+            <i class="faq-icon fa-solid fa-plus text-emerald-600 text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-5 pb-4 text-slate-500 text-sm leading-relaxed">Yes, we welcome bulk selling enquiries from businesses and organisations. Use the enquiry form or contact us directly.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors">
+            <span class="font-semibold text-slate-800 text-sm">Do you accept old desktop computers?</span>
+            <i class="faq-icon fa-solid fa-plus text-emerald-600 text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-5 pb-4 text-slate-500 text-sm leading-relaxed">Yes, we accept enquiries for desktop computers, All-in-One systems and workstations.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors">
+            <span class="font-semibold text-slate-800 text-sm">What details are required for evaluation?</span>
+            <i class="faq-icon fa-solid fa-plus text-emerald-600 text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-5 pb-4 text-slate-500 text-sm leading-relaxed">Brand, model, processor, RAM, storage, purchase year and physical condition are required for an initial evaluation.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors">
+            <span class="font-semibold text-slate-800 text-sm">How long does the quotation process take?</span>
+            <i class="faq-icon fa-solid fa-plus text-emerald-600 text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-5 pb-4 text-slate-500 text-sm leading-relaxed">Our team typically responds within 1–2 business days after receiving the enquiry, subject to workload.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 9 -->
+        <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors">
+            <span class="font-semibold text-slate-800 text-sm">How will I receive payment after accepting the quotation?</span>
+            <i class="faq-icon fa-solid fa-plus text-emerald-600 text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-5 pb-4 text-slate-500 text-sm leading-relaxed">Payment terms are discussed and agreed upon during the finalisation of the sale. Our team will guide you through the process.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8: CROSS NAVIGATION BANNER ===== -->
+  <section class="bg-gradient-to-r from-dell-700 to-dell-500 py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <p class="text-white text-lg sm:text-xl font-semibold mb-5">
+        🛒 Looking to buy a new or refurbished laptop?
+      </p>
+      <a href="buy.html" class="inline-flex items-center gap-2 bg-white text-dell-700 hover:bg-dell-50 font-bold px-8 py-3.5 rounded-xl transition-all text-sm shadow-lg">
+        <i class="fa-solid fa-shopping-cart"></i> EXPLORE PRODUCTS <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-[#0b1329] text-slate-400 pt-14 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
+
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center gap-2.5 mb-4">
+            <div class="w-9 h-9 bg-emerald-600 rounded-lg flex items-center justify-center">
+              <span class="text-white font-black text-lg leading-none">G</span>
+            </div>
+            <div>
+              <div class="text-white font-bold text-sm">GAINZ INDIA</div>
+              <div class="text-slate-500 text-[9px] font-medium tracking-wider uppercase">Peripherals Private Limited</div>
+            </div>
+          </div>
+          <p class="text-slate-500 text-xs leading-relaxed">Dell Exclusive Store in Chennai. Authorized dealer for Dell products and IT solutions.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wide">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-slate-400 hover:text-white text-sm transition-colors">Home</a></li>
+            <li><a href="buy.html" class="text-slate-400 hover:text-white text-sm transition-colors">Buy</a></li>
+            <li><a href="sell.html" class="text-emerald-400 hover:text-emerald-300 text-sm transition-colors font-medium">Sell</a></li>
+            <li><a href="https://gainzindia.com/contactus" target="_blank" rel="noopener" class="text-slate-400 hover:text-white text-sm transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wide">Contact Us</h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="tel:+917200521950" class="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
+                <i class="fa-solid fa-phone text-emerald-500 w-4 text-xs"></i>
+                (+91) 72005 21950
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/917200521950" target="_blank" rel="noopener" class="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
+                <i class="fa-brands fa-whatsapp text-emerald-500 w-4 text-xs"></i>
+                7200521950
+              </a>
+            </li>
+            <li>
+              <a href="mailto:sales@gainzindia.com" class="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
+                <i class="fa-solid fa-envelope text-emerald-500 w-4 text-xs"></i>
+                sales@gainzindia.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-6 text-center">
+        <p class="text-slate-500 text-xs">&copy; 2024 Gainz India Peripherals Private Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+  <a href="https://wa.me/917200521950?text=Hi%2C%20I%20want%20to%20sell%20my%20old%20laptop%20to%20Gainz%20India" target="_blank" rel="noopener"
+     class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold pl-4 pr-5 py-3 rounded-full shadow-xl shadow-emerald-900/40 transition-all hover:scale-105">
+    <i class="fa-brands fa-whatsapp text-xl"></i>
+    <span class="hidden sm:inline text-sm">7200521950</span>
+  </a>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ── 1. Mobile Menu Toggle ──
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', isOpen);
+      menuBtn.querySelector('i').className = isOpen ? 'fa-solid fa-bars text-lg' : 'fa-solid fa-xmark text-lg';
+    });
+
+    // ── 2. FAQ Accordion ──
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.faq-item');
+        const answer = item.querySelector('.faq-answer');
+        const icon = trigger.querySelector('.faq-icon');
+        const isOpen = answer.classList.contains('open');
+
+        // Close all
+        document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('open'));
+        document.querySelectorAll('.faq-item').forEach(it => it.classList.remove('bg-slate-50'));
+
+        // Open clicked if it was closed
+        if (!isOpen) {
+          answer.classList.add('open');
+          icon.classList.add('open');
+          item.classList.add('bg-slate-50');
+        }
+      });
+    });
+
+    // ── 3. Form Validation ──
+    const form = document.getElementById('sell-enquiry-form');
+    const requiredFields = form.querySelectorAll('[required]');
+
+    function validateField(field) {
+      const isCheckbox = field.type === 'checkbox';
+      const isEmpty = isCheckbox ? !field.checked : !field.value.trim();
+      const wrapper = field.closest('div');
+      const errorMsg = wrapper ? wrapper.querySelector('.error-msg') : null;
+
+      if (isEmpty) {
+        field.classList.add('error');
+        if (errorMsg) errorMsg.classList.remove('hidden');
+        if (field.id === 'consent') {
+          document.getElementById('consent-error').classList.remove('hidden');
+        }
+        return false;
+      } else {
+        field.classList.remove('error');
+        if (errorMsg) errorMsg.classList.add('hidden');
+        if (field.id === 'consent') {
+          document.getElementById('consent-error').classList.add('hidden');
+        }
+        return true;
+      }
+    }
+
+    requiredFields.forEach(field => {
+      const eventType = field.type === 'checkbox' ? 'change' : 'input';
+      field.addEventListener(eventType, () => validateField(field));
+    });
+
+    form.addEventListener('submit', function (e) {
+      let valid = true;
+      requiredFields.forEach(field => {
+        if (!validateField(field)) valid = false;
+      });
+      if (!valid) {
+        e.preventDefault();
+        // Scroll to first error
+        const firstError = form.querySelector('.error, .form-input.error');
+        if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+
+    // ── 4. Check ?submitted=true in URL ──
+    (function checkSubmitted() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('submitted') === 'true') {
+        const msg = document.getElementById('success-message');
+        if (msg) {
+          msg.classList.remove('hidden');
+          msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        if (form) form.classList.add('hidden');
+      }
+    })();
+
+    // ── 5. Smooth Scroll for anchor links ──
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offset = 80; // height of sticky nav
+          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ── File Upload Label ──
+    const fileInput = document.getElementById('product_images');
+    const fileNames = document.getElementById('file-names');
+    fileInput.addEventListener('change', function () {
+      if (this.files && this.files.length > 0) {
+        const names = Array.from(this.files).map(f => f.name).join(', ');
+        fileNames.textContent = `Selected: ${names}`;
+        fileNames.classList.remove('hidden');
+      } else {
+        fileNames.classList.add('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>

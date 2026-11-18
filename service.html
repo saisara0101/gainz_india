@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laptop & Desktop Repair Service | Gainz India Peripherals Private Limited</title>
+  <meta name="description" content="Expert laptop repair, desktop service, chip-level motherboard repair, screen replacement, SSD upgrade and more at Gainz India Peripherals Private Limited, Chennai." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            dell: {
+              50:  '#eff8ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#0076CE',
+              600: '#0062ab',
+              700: '#004f8a',
+              800: '#003a66',
+              900: '#0f172a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    /* ===== GLOBAL ===== */
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+    /* ===== ANNOUNCEMENT BAR ===== */
+    .announcement-bar { background: #0b1329; }
+
+    /* ===== GLASS NAV ===== */
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    /* ===== HERO ===== */
+    .hero-section {
+      background: linear-gradient(135deg, #0b1329 0%, #0d1f3c 50%, #0b1329 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
+    }
+    .hero-glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,118,206,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #0076CE, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glass-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    /* ===== SERVICE CARDS ===== */
+    .service-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
+
+    /* ===== WHY CARDS ===== */
+    .why-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+    .why-card:hover { transform: translateY(-4px); background: rgba(255,255,255,0.09); }
+
+    /* ===== FAQ ACCORDION ===== */
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-answer.open { max-height: 300px; }
+    .faq-chevron { transition: transform 0.3s ease; }
+    .faq-chevron.rotated { transform: rotate(180deg); }
+
+    /* ===== HOW IT WORKS LINE ===== */
+    .step-connector {
+      flex: 1;
+      height: 2px;
+      border-top: 2px dashed #cbd5e1;
+      margin-top: 1.75rem;
+    }
+
+    /* ===== FLOATING WHATSAPP ===== */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+    }
+    .wa-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25d366;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+    }
+    .wa-pulse {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: rgba(37,211,102,0.3);
+      animation: waPulse 2s infinite;
+    }
+    @keyframes waPulse {
+      0%   { transform: scale(1); opacity: 0.8; }
+      70%  { transform: scale(1.4); opacity: 0; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+    .wa-label {
+      position: absolute;
+      right: 64px;
+      white-space: nowrap;
+      background: #25d366;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+    .wa-btn:hover .wa-label { opacity: 1; }
+
+    /* ===== PILL TOGGLE RADIO ===== */
+    .contact-pill input[type="radio"] { display: none; }
+    .contact-pill label {
+      display: inline-block;
+      padding: 8px 20px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      color: #64748b;
+      transition: all 0.2s;
+      user-select: none;
+    }
+    .contact-pill input[type="radio"]:checked + label {
+      background: #0076CE;
+      border-color: #0076CE;
+      color: #fff;
+    }
+
+    /* ===== FORM FIELD FOCUS ===== */
+    .form-input {
+      border: 1.5px solid #e2e8f0;
+      border-radius: 0.5rem;
+      padding: 10px 16px;
+      width: 100%;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .form-input:focus { border-color: #0076CE; box-shadow: 0 0 0 3px rgba(0,118,206,0.12); }
+    .form-input.error { border-color: #ef4444; }
+    .error-msg { color: #ef4444; font-size: 12px; margin-top: 4px; display: none; }
+    .error-msg.show { display: block; }
+
+    /* ===== FILE UPLOAD ===== */
+    .file-upload-label {
+      border: 2px dashed #cbd5e1;
+      border-radius: 0.75rem;
+      padding: 24px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      display: block;
+    }
+    .file-upload-label:hover { border-color: #0076CE; background: #eff8ff; }
+
+    /* ===== NAV ACTIVE ===== */
+    .nav-active { color: #0076CE !important; font-weight: 700; }
+
+    /* ===== SPINNER ===== */
+    .spinner { display: none; }
+    .spinner.show { display: inline-block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spin-anim { animation: spin 0.8s linear infinite; }
+
+    /* ===== SUCCESS BOX ===== */
+    .success-box { display: none; }
+    .success-box.show { display: flex; }
+
+    /* ===== CROSS NAV BANNERS ===== */
+    .cross-banner {
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .cross-banner:hover { transform: scale(1.01); opacity: 0.95; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<!-- ===================== ANNOUNCEMENT BAR ===================== -->
+<div class="announcement-bar text-white text-xs py-2 px-4">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
+    <span class="font-medium">🔧 Professional Laptop &amp; Desktop Repair — Expert Technicians at Gainz India</span>
+    <div class="flex items-center gap-4 font-medium">
+      <a href="tel:+917200521950" class="flex items-center gap-1 hover:text-dell-200 transition-colors">
+        <i class="fa-solid fa-phone text-green-400 text-xs"></i>
+        (+91) 72005 21950
+      </a>
+      <a href="https://wa.me/917200521950" target="_blank" rel="noopener" class="flex items-center gap-1 hover:text-green-300 transition-colors">
+        <i class="fa-brands fa-whatsapp text-green-400"></i>
+        7200521950
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== STICKY GLASS NAV ===================== -->
+<nav class="glass-nav sticky top-0 z-50 border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-2.5 flex-shrink-0">
+      <div class="w-9 h-9 bg-emerald-600 rounded-lg flex items-center justify-center font-extrabold text-white text-lg leading-none select-none">G</div>
+      <div class="leading-tight">
+        <div class="text-white font-extrabold text-base tracking-wide">GAINZ INDIA</div>
+        <div class="text-slate-400 text-[10px] font-medium tracking-wider">Peripherals Private Limited</div>
+      </div>
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <div class="hidden lg:flex items-center gap-6 text-sm font-semibold">
+      <a href="index.html" class="text-slate-300 hover:text-white transition-colors">Home</a>
+      <a href="buy.html" class="text-slate-300 hover:text-white transition-colors">BUY</a>
+      <a href="sell.html" class="text-slate-300 hover:text-white transition-colors">SELL</a>
+      <a href="service.html" class="nav-active text-dell-500 font-bold">SERVICE</a>
+      <a href="https://gainzindia.com/contactus" target="_blank" rel="noopener" class="text-slate-300 hover:text-white transition-colors">Contact</a>
+    </div>
+
+    <!-- Desktop CTA Buttons -->
+    <div class="hidden lg:flex items-center gap-2 flex-shrink-0">
+      <a href="#service-form" class="bg-dell-500 hover:bg-dell-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
+        <i class="fa-solid fa-wrench mr-1.5 text-xs"></i>Book a Service
+      </a>
+      <a href="https://wa.me/917200521950" target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
+        <i class="fa-brands fa-whatsapp mr-1.5"></i>WhatsApp Us
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="mobileMenuBtn" class="lg:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10 px-4 pb-4">
+    <div class="flex flex-col gap-1 pt-3">
+      <a href="index.html" class="text-slate-300 hover:text-white font-medium py-2 px-3 rounded-lg hover:bg-white/5 transition-colors">Home</a>
+      <a href="buy.html" class="text-slate-300 hover:text-white font-medium py-2 px-3 rounded-lg hover:bg-white/5 transition-colors">BUY</a>
+      <a href="sell.html" class="text-slate-300 hover:text-white font-medium py-2 px-3 rounded-lg hover:bg-white/5 transition-colors">SELL</a>
+      <a href="service.html" class="text-dell-500 font-bold py-2 px-3 rounded-lg bg-dell-500/10">SERVICE</a>
+      <a href="https://gainzindia.com/contactus" target="_blank" rel="noopener" class="text-slate-300 hover:text-white font-medium py-2 px-3 rounded-lg hover:bg-white/5 transition-colors">Contact</a>
+      <div class="flex gap-2 mt-2 pt-2 border-t border-white/10">
+        <a href="#service-form" class="flex-1 bg-dell-500 hover:bg-dell-600 text-white text-sm font-semibold px-3 py-2 rounded-lg text-center transition-colors">
+          <i class="fa-solid fa-wrench mr-1 text-xs"></i>Book a Service
+        </a>
+        <a href="https://wa.me/917200521950" target="_blank" rel="noopener" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-3 py-2 rounded-lg text-center transition-colors">
+          <i class="fa-brands fa-whatsapp mr-1"></i>WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== SECTION 1: HERO ===================== -->
+<section class="hero-section py-20 md:py-28 relative">
+  <div class="hero-glow top-10 left-1/4"></div>
+  <div class="hero-glow bottom-0 right-1/4 opacity-70"></div>
+
+  <div class="max-w-7xl mx-auto px-4 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left -->
+      <div>
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 text-white text-sm font-semibold px-4 py-2 rounded-full mb-6">
+          🔧 <span>Certified Laptop &amp; Desktop Service</span>
+        </div>
+
+        <!-- H1 -->
+        <h1 class="text-4xl md:text-5xl xl:text-6xl font-extrabold text-white leading-tight mb-5">
+          Expert Laptop &amp;<br/>
+          <span class="gradient-text">Desktop Repair Services</span>
+        </h1>
+
+        <!-- Sub -->
+        <p class="text-slate-300 text-lg leading-relaxed mb-8 max-w-lg">
+          From hardware issues to advanced motherboard repairs, Gainz India delivers reliable computer service solutions with expert technicians and advanced diagnostic equipment.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap gap-3">
+          <a href="#service-form" class="bg-dell-500 hover:bg-dell-600 text-white font-bold px-6 py-3.5 rounded-xl transition-colors text-sm shadow-lg shadow-dell-500/30">
+            <i class="fa-solid fa-calendar-check mr-2"></i>BOOK A SERVICE
+          </a>
+          <a href="https://gainzindia.com/contactus" target="_blank" rel="noopener" class="border-2 border-white/30 hover:border-white text-white font-bold px-6 py-3.5 rounded-xl transition-colors text-sm hover:bg-white/5">
+            <i class="fa-solid fa-headset mr-2"></i>CONTACT OUR TEAM
+          </a>
+          <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20laptop%20service" target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl transition-colors text-sm shadow-lg shadow-emerald-600/30">
+            <i class="fa-brands fa-whatsapp mr-2 text-base"></i>WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Glass Card -->
+      <div class="glass-card rounded-2xl p-7">
+        <h3 class="text-white font-bold text-lg mb-5">Service Highlights</h3>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-dell-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">🛠️</span>
+            </div>
+            <span class="text-slate-200 font-medium">Laptop &amp; Desktop Repair</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-red-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">🔬</span>
+            </div>
+            <span class="text-slate-200 font-medium">Chip-Level Motherboard Repair</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-sky-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">🖥️</span>
+            </div>
+            <span class="text-slate-200 font-medium">Screen &amp; Keyboard Replacement</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-teal-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">💾</span>
+            </div>
+            <span class="text-slate-200 font-medium">SSD &amp; RAM Upgrades</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-purple-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">🔄</span>
+            </div>
+            <span class="text-slate-200 font-medium">OS Installation &amp; Recovery</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">✅</span>
+            </div>
+            <span class="text-slate-200 font-medium">Quality Checks After Service</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION 2: OUR SERVICES ===================== -->
+<section id="services" class="bg-slate-100 py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-3">Complete Computer Repair &amp; Service Solutions</h2>
+      <p class="text-slate-500 text-lg">Professional repair and upgrade services for laptops and desktops</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
+
+      <!-- Card 1 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-laptop-medical text-blue-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">Laptop Repair &amp; Service</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Diagnosis and repair for all laptop hardware and software issues.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20Laptop%20Repair%20%26%20Service" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-desktop text-purple-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">Desktop Repair &amp; Service</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Complete repair solutions for desktop computers and All-in-One systems.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20Desktop%20Repair%20%26%20Service" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-microchip text-red-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">Laptop Chip-Level Repair</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Advanced component-level diagnosis and repair for complex motherboard faults.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20Chip-Level%20Repair" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-circle-nodes text-orange-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">Motherboard Repair</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Expert inspection and repair of laptop and desktop motherboards.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20Motherboard%20Repair" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-sky-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-display text-sky-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">Laptop Screen Replacement</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Replacement of cracked, damaged or faulty laptop display panels.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20Laptop%20Screen%20Replacement" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-keyboard text-indigo-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">Keyboard Replacement</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Replacement of worn, damaged or non-functioning laptop keyboards.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20Keyboard%20Replacement" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-battery-half text-green-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">Laptop Battery Replacement</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Replace degraded or non-charging batteries with compatible replacements.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20Battery%20Replacement" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-memory text-teal-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">SSD &amp; RAM Upgrade</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Upgrade your laptop or desktop storage and memory for better performance.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20SSD%20%26%20RAM%20Upgrade" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-brands fa-windows text-blue-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">OS Installation</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Fresh Windows installation, driver setup and system configuration.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20OS%20Installation" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-database text-amber-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">Data Recovery &amp; Backup</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Assistance with data recovery and backup solutions for laptops and desktops.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20Data%20Recovery%20%26%20Backup" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-temperature-high text-rose-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">Heating &amp; Performance Issues</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Diagnosis and resolution of overheating, thermal paste replacement and performance issues.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20Heating%20%26%20Performance%20Repair" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="service-card bg-white rounded-xl p-6 shadow-sm text-center flex flex-col items-center">
+        <div class="w-14 h-14 bg-violet-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-stethoscope text-violet-600 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-slate-800 mb-2">Hardware Diagnosis</h3>
+        <p class="text-slate-500 text-sm mb-4 flex-1">Comprehensive hardware inspection and troubleshooting report.</p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20Hardware%20Diagnosis" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-700 border border-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-50 transition-colors">Enquire Now</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION 3: CHIP-LEVEL REPAIR ===================== -->
+<section class="py-20" style="background:#0b1329;">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left Text -->
+      <div>
+        <div class="inline-flex items-center gap-2 bg-red-500/15 border border-red-500/30 text-red-400 text-sm font-semibold px-4 py-2 rounded-full mb-5">
+          <i class="fa-solid fa-microchip"></i> Advanced Repair
+        </div>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-5 leading-tight">
+          Advanced Chip-Level<br/> Laptop Repair
+        </h2>
+        <p class="text-slate-300 leading-relaxed mb-8">
+          Motherboard issues that others may give up on deserve expert attention. Our advanced repair capabilities help diagnose and resolve complex laptop motherboard problems.
+        </p>
+        <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20chip-level%20motherboard%20repair" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-dell-500 hover:bg-dell-600 text-white font-bold px-6 py-3.5 rounded-xl transition-colors text-sm shadow-lg shadow-dell-500/30">
+          <i class="fa-brands fa-whatsapp text-base"></i>ENQUIRE FOR CHIP-LEVEL REPAIR
+        </a>
+      </div>
+
+      <!-- Right Feature List -->
+      <div class="glass-card rounded-2xl p-7">
+        <h3 class="text-white font-bold text-lg mb-6">What We Offer</h3>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3">
+            <div class="w-7 h-7 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-check text-white text-xs"></i>
+            </div>
+            <span class="text-slate-200 font-medium">Advanced Component Diagnosis</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <div class="w-7 h-7 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-check text-white text-xs"></i>
+            </div>
+            <span class="text-slate-200 font-medium">BGA Rework Capabilities</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <div class="w-7 h-7 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-check text-white text-xs"></i>
+            </div>
+            <span class="text-slate-200 font-medium">Motherboard IC Inspection</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <div class="w-7 h-7 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-check text-white text-xs"></i>
+            </div>
+            <span class="text-slate-200 font-medium">Component-Level Troubleshooting</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <div class="w-7 h-7 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-check text-white text-xs"></i>
+            </div>
+            <span class="text-slate-200 font-medium">Expert Technical Inspection</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <div class="w-7 h-7 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-check text-white text-xs"></i>
+            </div>
+            <span class="text-slate-200 font-medium">Quality Checks After Repair</span>
+          </li>
+        </ul>
+
+        <p class="text-slate-400 text-xs italic mt-6 border-t border-white/10 pt-4">
+          * Repair outcomes depend on the nature and extent of the fault. Our team will advise after inspection.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION 4: HOW IT WORKS ===================== -->
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-3">Simple &amp; Reliable Service Process</h2>
+      <p class="text-slate-500 text-lg">From booking to handover — a clear and transparent process</p>
+    </div>
+
+    <!-- Desktop Steps -->
+    <div class="hidden md:flex items-start gap-0">
+
+      <!-- Step 1 -->
+      <div class="flex flex-col items-center text-center flex-1">
+        <div class="w-14 h-14 bg-dell-500 rounded-full flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-dell-500/30 mb-4">1</div>
+        <div class="text-2xl mb-2">📋</div>
+        <h3 class="font-bold text-slate-800 text-sm mb-1">Book Your Service</h3>
+        <p class="text-slate-500 text-xs px-2">Submit your device details through our online service form.</p>
+      </div>
+      <div class="step-connector flex-shrink-0 w-8 mx-0 mt-7"></div>
+
+      <!-- Step 2 -->
+      <div class="flex flex-col items-center text-center flex-1">
+        <div class="w-14 h-14 bg-dell-500 rounded-full flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-dell-500/30 mb-4">2</div>
+        <div class="text-2xl mb-2">🔍</div>
+        <h3 class="font-bold text-slate-800 text-sm mb-1">Device Inspection</h3>
+        <p class="text-slate-500 text-xs px-2">Our technical team inspects the device and identifies the issue.</p>
+      </div>
+      <div class="step-connector flex-shrink-0 w-8 mx-0 mt-7"></div>
+
+      <!-- Step 3 -->
+      <div class="flex flex-col items-center text-center flex-1">
+        <div class="w-14 h-14 bg-dell-500 rounded-full flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-dell-500/30 mb-4">3</div>
+        <div class="text-2xl mb-2">💬</div>
+        <h3 class="font-bold text-slate-800 text-sm mb-1">Diagnosis &amp; Quotation</h3>
+        <p class="text-slate-500 text-xs px-2">Receive the repair assessment and estimated service cost.</p>
+      </div>
+      <div class="step-connector flex-shrink-0 w-8 mx-0 mt-7"></div>
+
+      <!-- Step 4 -->
+      <div class="flex flex-col items-center text-center flex-1">
+        <div class="w-14 h-14 bg-dell-500 rounded-full flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-dell-500/30 mb-4">4</div>
+        <div class="text-2xl mb-2">🔧</div>
+        <h3 class="font-bold text-slate-800 text-sm mb-1">Repair &amp; Quality Check</h3>
+        <p class="text-slate-500 text-xs px-2">After your approval, the repair is carried out and quality checked.</p>
+      </div>
+      <div class="step-connector flex-shrink-0 w-8 mx-0 mt-7"></div>
+
+      <!-- Step 5 -->
+      <div class="flex flex-col items-center text-center flex-1">
+        <div class="w-14 h-14 bg-dell-500 rounded-full flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-dell-500/30 mb-4">5</div>
+        <div class="text-2xl mb-2">📦</div>
+        <h3 class="font-bold text-slate-800 text-sm mb-1">Device Handover</h3>
+        <p class="text-slate-500 text-xs px-2">Get your serviced device with applicable service details.</p>
+      </div>
+    </div>
+
+    <!-- Mobile Steps -->
+    <div class="flex md:hidden flex-col gap-6 pl-4">
+      <div class="flex gap-4 items-start">
+        <div class="flex flex-col items-center">
+          <div class="w-10 h-10 bg-dell-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">1</div>
+          <div class="w-0.5 bg-slate-200 flex-1 mt-1" style="min-height:40px;"></div>
+        </div>
+        <div class="pt-1.5">
+          <div class="text-xl mb-1">📋</div>
+          <h3 class="font-bold text-slate-800 text-sm">Book Your Service</h3>
+          <p class="text-slate-500 text-xs mt-0.5">Submit your device details through our online service form.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="flex flex-col items-center">
+          <div class="w-10 h-10 bg-dell-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">2</div>
+          <div class="w-0.5 bg-slate-200 flex-1 mt-1" style="min-height:40px;"></div>
+        </div>
+        <div class="pt-1.5">
+          <div class="text-xl mb-1">🔍</div>
+          <h3 class="font-bold text-slate-800 text-sm">Device Inspection</h3>
+          <p class="text-slate-500 text-xs mt-0.5">Our technical team inspects the device and identifies the issue.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="flex flex-col items-center">
+          <div class="w-10 h-10 bg-dell-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">3</div>
+          <div class="w-0.5 bg-slate-200 flex-1 mt-1" style="min-height:40px;"></div>
+        </div>
+        <div class="pt-1.5">
+          <div class="text-xl mb-1">💬</div>
+          <h3 class="font-bold text-slate-800 text-sm">Diagnosis &amp; Quotation</h3>
+          <p class="text-slate-500 text-xs mt-0.5">Receive the repair assessment and estimated service cost.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="flex flex-col items-center">
+          <div class="w-10 h-10 bg-dell-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">4</div>
+          <div class="w-0.5 bg-slate-200 flex-1 mt-1" style="min-height:40px;"></div>
+        </div>
+        <div class="pt-1.5">
+          <div class="text-xl mb-1">🔧</div>
+          <h3 class="font-bold text-slate-800 text-sm">Repair &amp; Quality Check</h3>
+          <p class="text-slate-500 text-xs mt-0.5">After your approval, the repair is carried out and quality checked.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="flex flex-col items-center">
+          <div class="w-10 h-10 bg-dell-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">5</div>
+        </div>
+        <div class="pt-1.5">
+          <div class="text-xl mb-1">📦</div>
+          <h3 class="font-bold text-slate-800 text-sm">Device Handover</h3>
+          <p class="text-slate-500 text-xs mt-0.5">Get your serviced device with applicable service details.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== SECTION 5: SERVICE BOOKING FORM ===================== -->
+<section id="service-form" class="bg-slate-50 py-20">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-3">Tell Us What's Wrong With Your Device</h2>
+      <p class="text-slate-500">Fill in your details and our service team will get back to you promptly.</p>
+    </div>
+
+    <!-- Success Message -->
+    <div id="successBox" class="success-box items-start gap-4 bg-dell-50 border border-dell-200 rounded-2xl p-6 mb-8">
+      <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+        <i class="fa-solid fa-circle-check text-emerald-600 text-xl"></i>
+      </div>
+      <div>
+        <h3 class="font-bold text-slate-800 text-lg mb-1">✅ Service Enquiry Received!</h3>
+        <p class="text-slate-600 text-sm">Our team will contact you shortly. For immediate assistance, WhatsApp us at
+          <a href="https://wa.me/917200521950" target="_blank" class="text-dell-500 font-semibold hover:underline">7200521950</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form id="serviceForm" action="https://formsubmit.co/sales@gainzindia.com" method="POST" enctype="multipart/form-data"
+          class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+
+      <!-- Hidden Fields -->
+      <input type="hidden" name="_subject" value="New Service Enquiry - Gainz India">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="http://localhost:8000/service.html?submitted=true">
+      <input type="text" name="_honey" style="display:none">
+
+      <!-- CUSTOMER DETAILS -->
+      <div class="bg-slate-50 border-b border-slate-100 px-6 py-3">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-widest"><i class="fa-solid fa-user mr-2 text-dell-500"></i>Customer Details</span>
+      </div>
+      <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5">Full Name <span class="text-red-500">*</span></label>
+          <input type="text" name="full_name" id="fullName" placeholder="Your full name" class="form-input" />
+          <p class="error-msg" id="fullNameErr">Please enter your name.</p>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5">Mobile Number <span class="text-red-500">*</span></label>
+          <input type="tel" name="mobile" id="mobile" placeholder="+91 XXXXX XXXXX" class="form-input" />
+          <p class="error-msg" id="mobileErr">Please enter a valid mobile number.</p>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5">Email Address <span class="text-red-500">*</span></label>
+          <input type="email" name="email" id="email" placeholder="you@example.com" class="form-input" />
+          <p class="error-msg" id="emailErr">Please enter a valid email address.</p>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5">City <span class="text-red-500">*</span></label>
+          <input type="text" name="city" id="city" placeholder="Your city" class="form-input" />
+          <p class="error-msg" id="cityErr">Please enter your city.</p>
+        </div>
+      </div>
+
+      <!-- DEVICE DETAILS -->
+      <div class="bg-slate-50 border-y border-slate-100 px-6 py-3">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-widest"><i class="fa-solid fa-laptop mr-2 text-dell-500"></i>Device Details</span>
+      </div>
+      <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5">Device Type <span class="text-red-500">*</span></label>
+          <select name="device_type" id="deviceType" class="form-input bg-white">
+            <option value="">Select device type</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Desktop">Desktop</option>
+            <option value="All-in-One">All-in-One</option>
+            <option value="Other">Other</option>
+          </select>
+          <p class="error-msg" id="deviceTypeErr">Please select a device type.</p>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5">Brand <span class="text-red-500">*</span></label>
+          <select name="brand" id="brand" class="form-input bg-white">
+            <option value="">Select brand</option>
+            <option value="Dell">Dell</option>
+            <option value="HP">HP</option>
+            <option value="Lenovo">Lenovo</option>
+            <option value="Acer">Acer</option>
+            <option value="Apple">Apple</option>
+            <option value="Other">Other</option>
+          </select>
+          <p class="error-msg" id="brandErr">Please select a brand.</p>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5">Model Number <span class="text-red-500">*</span></label>
+          <input type="text" name="model_number" id="modelNumber" placeholder="e.g. Dell Inspiron 15 3511" class="form-input" />
+          <p class="error-msg" id="modelNumberErr">Please enter the model number.</p>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5">Serial Number <span class="text-slate-400 font-normal">(optional)</span></label>
+          <input type="text" name="serial_number" placeholder="Device serial number" class="form-input" />
+        </div>
+      </div>
+
+      <!-- SERVICE DETAILS -->
+      <div class="bg-slate-50 border-y border-slate-100 px-6 py-3">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-widest"><i class="fa-solid fa-wrench mr-2 text-dell-500"></i>Service Details</span>
+      </div>
+      <div class="p-6 space-y-5">
+
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5">Select Required Service <span class="text-red-500">*</span></label>
+          <select name="service_required" id="serviceRequired" class="form-input bg-white">
+            <option value="">Select a service</option>
+            <option value="Laptop Repair & Service">Laptop Repair &amp; Service</option>
+            <option value="Desktop Repair & Service">Desktop Repair &amp; Service</option>
+            <option value="Laptop Chip-Level Repair">Laptop Chip-Level Repair</option>
+            <option value="Motherboard Repair">Motherboard Repair</option>
+            <option value="Laptop Screen Replacement">Laptop Screen Replacement</option>
+            <option value="Keyboard Replacement">Keyboard Replacement</option>
+            <option value="Laptop Battery Replacement">Laptop Battery Replacement</option>
+            <option value="SSD & RAM Upgrade">SSD &amp; RAM Upgrade</option>
+            <option value="OS Installation">OS Installation</option>
+            <option value="Data Recovery & Backup">Data Recovery &amp; Backup</option>
+            <option value="Heating & Performance Issues">Heating &amp; Performance Issues</option>
+            <option value="Hardware Diagnosis">Hardware Diagnosis</option>
+          </select>
+          <p class="error-msg" id="serviceRequiredErr">Please select a service.</p>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5">Describe Your Problem <span class="text-red-500">*</span></label>
+          <textarea name="problem_description" id="problemDesc" rows="4" placeholder="Please describe the issue in detail — e.g. laptop not powering on, screen cracked, keyboard not working, overheating, etc." class="form-input resize-none"></textarea>
+          <p class="error-msg" id="problemDescErr">Please describe the problem.</p>
+        </div>
+
+        <!-- File Upload -->
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5">Upload Device Images <span class="text-slate-400 font-normal">(optional)</span></label>
+          <label for="deviceImages" class="file-upload-label">
+            <i class="fa-solid fa-cloud-arrow-up text-3xl text-slate-400 mb-2 block"></i>
+            <span class="text-slate-500 text-sm font-medium block" id="fileLabel">Click to upload images of your device</span>
+            <span class="text-slate-400 text-xs mt-1 block">Accepts JPG, PNG, WEBP — multiple files allowed</span>
+          </label>
+          <input type="file" id="deviceImages" name="device_images" accept="image/*" multiple class="hidden" />
+        </div>
+
+        <!-- Preferred Contact Method -->
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-2.5">Preferred Contact Method <span class="text-red-500">*</span></label>
+          <div class="flex flex-wrap gap-3">
+            <div class="contact-pill">
+              <input type="radio" name="contact_method" id="contactCall" value="Call" />
+              <label for="contactCall">📞 Call</label>
+            </div>
+            <div class="contact-pill">
+              <input type="radio" name="contact_method" id="contactWA" value="WhatsApp" checked />
+              <label for="contactWA">💬 WhatsApp</label>
+            </div>
+            <div class="contact-pill">
+              <input type="radio" name="contact_method" id="contactEmail" value="Email" />
+              <label for="contactEmail">📧 Email</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consent -->
+        <div class="flex items-start gap-3 pt-1">
+          <input type="checkbox" id="consent" name="consent" class="mt-0.5 w-4 h-4 accent-dell-500 cursor-pointer flex-shrink-0" />
+          <label for="consent" class="text-sm text-slate-600 cursor-pointer leading-relaxed">
+            I agree to be contacted by Gainz India regarding my service enquiry. <span class="text-red-500">*</span>
+          </label>
+        </div>
+        <p class="error-msg" id="consentErr">Please accept the consent to proceed.</p>
+
+        <!-- Submit Button -->
+        <div class="pt-2">
+          <button type="submit" id="submitBtn" class="w-full bg-dell-500 hover:bg-dell-600 text-white font-bold text-base py-4 px-6 rounded-xl transition-colors shadow-lg shadow-dell-500/20 flex items-center justify-center gap-3">
+            <span>BOOK MY SERVICE →</span>
+            <i class="fa-solid fa-circle-notch spin-anim spinner" id="submitSpinner"></i>
+          </button>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== SECTION 6: WHY CHOOSE US ===================== -->
+<section class="py-20" style="background:#0b1329;">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3">Why Trust Gainz India With Your Device?</h2>
+      <p class="text-slate-400 text-lg">Professional service you can rely on</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <div class="why-card rounded-2xl p-7 text-center">
+        <div class="text-4xl mb-4">👨‍🔧</div>
+        <h3 class="text-white font-bold text-lg mb-2">Experienced Technicians</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Professional technical support for laptop and desktop issues.</p>
+      </div>
+
+      <div class="why-card rounded-2xl p-7 text-center">
+        <div class="text-4xl mb-4">🔬</div>
+        <h3 class="text-white font-bold text-lg mb-2">Advanced Repair Equipment</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Modern diagnostic and motherboard repair equipment.</p>
+      </div>
+
+      <div class="why-card rounded-2xl p-7 text-center">
+        <div class="text-4xl mb-4">✅</div>
+        <h3 class="text-white font-bold text-lg mb-2">Quality Inspection</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Devices undergo appropriate quality checks after repair.</p>
+      </div>
+
+      <div class="why-card rounded-2xl p-7 text-center">
+        <div class="text-4xl mb-4">📞</div>
+        <h3 class="text-white font-bold text-lg mb-2">Reliable Customer Support</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Clear communication throughout the service process.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION 7: FAQ ===================== -->
+<section class="bg-white py-20">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-3">Frequently Asked Questions</h2>
+      <p class="text-slate-500">Common questions about our repair and service process</p>
+    </div>
+
+    <div class="space-y-3" id="faqContainer">
+
+      <!-- FAQ Items -->
+      <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-slate-800 hover:bg-slate-50 transition-colors text-sm">
+          <span>Which laptop brands do you service?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0 text-xs"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="px-5 pb-4 text-slate-600 text-sm leading-relaxed">We service Dell, HP, Lenovo, Acer, Apple and other major laptop brands. Contact our team to confirm service availability for your specific model.</p>
+        </div>
+      </div>
+
+      <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-slate-800 hover:bg-slate-50 transition-colors text-sm">
+          <span>Do you provide chip-level motherboard repair?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0 text-xs"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="px-5 pb-4 text-slate-600 text-sm leading-relaxed">Yes, we have advanced capabilities for chip-level laptop motherboard diagnosis and repair. Outcomes depend on the nature of the fault and will be communicated after inspection.</p>
+        </div>
+      </div>
+
+      <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-slate-800 hover:bg-slate-50 transition-colors text-sm">
+          <span>Can you repair laptops that are not powering on?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0 text-xs"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="px-5 pb-4 text-slate-600 text-sm leading-relaxed">Yes, we diagnose and repair no-power issues including motherboard faults, power IC issues and related hardware problems.</p>
+        </div>
+      </div>
+
+      <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-slate-800 hover:bg-slate-50 transition-colors text-sm">
+          <span>Do you replace laptop screens and keyboards?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0 text-xs"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="px-5 pb-4 text-slate-600 text-sm leading-relaxed">Yes, we replace cracked, damaged or faulty screens and non-functioning keyboards for most laptop models.</p>
+        </div>
+      </div>
+
+      <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-slate-800 hover:bg-slate-50 transition-colors text-sm">
+          <span>Can I upgrade my laptop RAM and SSD?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0 text-xs"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="px-5 pb-4 text-slate-600 text-sm leading-relaxed">Yes, we provide RAM and SSD upgrade services for compatible laptops and desktops.</p>
+        </div>
+      </div>
+
+      <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-slate-800 hover:bg-slate-50 transition-colors text-sm">
+          <span>Do you provide a service warranty?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0 text-xs"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="px-5 pb-4 text-slate-600 text-sm leading-relaxed">Service warranty terms vary depending on the type of repair and parts used. Our team will advise you during the service process.</p>
+        </div>
+      </div>
+
+      <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-slate-800 hover:bg-slate-50 transition-colors text-sm">
+          <span>How can I book a laptop repair?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0 text-xs"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="px-5 pb-4 text-slate-600 text-sm leading-relaxed">Fill out our online service booking form or WhatsApp us at 7200521950 to initiate a service enquiry.</p>
+        </div>
+      </div>
+
+      <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-slate-800 hover:bg-slate-50 transition-colors text-sm">
+          <span>How much does laptop repair cost?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0 text-xs"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="px-5 pb-4 text-slate-600 text-sm leading-relaxed">Repair costs vary based on the type of fault, parts required and service involved. Our team will provide an assessment and estimated cost after inspection.</p>
+        </div>
+      </div>
+
+      <div class="faq-item border border-slate-200 rounded-xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-slate-800 hover:bg-slate-50 transition-colors text-sm">
+          <span>How long does the repair process take?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0 text-xs"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="px-5 pb-4 text-slate-600 text-sm leading-relaxed">Repair timelines vary based on the type of service and parts availability. Our team will keep you informed throughout the process.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION 8: FINAL CTA BANNER ===================== -->
+<section class="py-20" style="background: linear-gradient(135deg, #004f8a 0%, #0f172a 100%);">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Having Trouble With Your Laptop or Desktop?</h2>
+    <p class="text-slate-300 text-lg mb-10 leading-relaxed">
+      Let our technical team help you find the right repair solution. Contact Gainz India today for professional service assistance.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="#service-form" class="bg-white hover:bg-slate-100 text-dell-700 font-bold px-7 py-3.5 rounded-xl transition-colors text-sm shadow-lg">
+        <i class="fa-solid fa-calendar-check mr-2"></i>BOOK A SERVICE
+      </a>
+      <a href="https://gainzindia.com/contactus" target="_blank" rel="noopener" class="border-2 border-white/40 hover:border-white text-white font-bold px-7 py-3.5 rounded-xl transition-colors text-sm hover:bg-white/5">
+        <i class="fa-solid fa-headset mr-2"></i>CONTACT US
+      </a>
+      <a href="https://wa.me/917200521950" target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-7 py-3.5 rounded-xl transition-colors text-sm shadow-lg shadow-emerald-600/30">
+        <i class="fa-brands fa-whatsapp mr-2 text-base"></i>7200521950
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CROSS NAVIGATION BANNERS ===================== -->
+<div class="grid grid-cols-1 md:grid-cols-2">
+  <a href="buy.html" class="cross-banner block p-8 text-white" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+    <div class="max-w-xs mx-auto text-center">
+      <div class="text-4xl mb-3">🛒</div>
+      <h3 class="font-extrabold text-xl mb-1">Explore Products</h3>
+      <p class="text-emerald-100 text-sm mb-4">Browse our range of laptops, desktops and peripherals</p>
+      <span class="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 font-bold text-sm px-5 py-2.5 rounded-xl transition-colors">
+        BUY <i class="fa-solid fa-arrow-right text-xs"></i>
+      </span>
+    </div>
+  </a>
+  <a href="sell.html" class="cross-banner block p-8 text-white" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%);">
+    <div class="max-w-xs mx-auto text-center">
+      <div class="text-4xl mb-3">🔄</div>
+      <h3 class="font-extrabold text-xl mb-1">Sell Your Device</h3>
+      <p class="text-amber-100 text-sm mb-4">Get the best value for your used laptop or desktop</p>
+      <span class="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 font-bold text-sm px-5 py-2.5 rounded-xl transition-colors">
+        SELL <i class="fa-solid fa-arrow-right text-xs"></i>
+      </span>
+    </div>
+  </a>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer style="background:#0b1329;" class="pt-14 pb-8 text-slate-400">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
+
+      <!-- Brand -->
+      <div>
+        <a href="index.html" class="flex items-center gap-2.5 mb-4">
+          <div class="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center font-extrabold text-white text-xl">G</div>
+          <div>
+            <div class="text-white font-extrabold text-base tracking-wide">GAINZ INDIA</div>
+            <div class="text-slate-500 text-xs tracking-wider">Peripherals Private Limited</div>
+          </div>
+        </a>
+        <p class="text-sm leading-relaxed">Expert laptop &amp; desktop repair services — trusted technical support for your devices.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="buy.html" class="hover:text-white transition-colors">Buy</a></li>
+          <li><a href="sell.html" class="hover:text-white transition-colors">Sell</a></li>
+          <li><a href="service.html" class="text-dell-500 font-semibold">Service</a></li>
+          <li><a href="https://gainzindia.com/contactus" target="_blank" rel="noopener" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Contact Us</h4>
+        <ul class="space-y-3 text-sm">
+          <li>
+            <a href="tel:+917200521950" class="flex items-center gap-2 hover:text-white transition-colors">
+              <i class="fa-solid fa-phone text-dell-500 w-4"></i>
+              (+91) 72005 21950
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/917200521950" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-green-400 transition-colors">
+              <i class="fa-brands fa-whatsapp text-green-500 w-4"></i>
+              7200521950
+            </a>
+          </li>
+          <li>
+            <a href="mailto:sales@gainzindia.com" class="flex items-center gap-2 hover:text-white transition-colors">
+              <i class="fa-solid fa-envelope text-dell-500 w-4"></i>
+              sales@gainzindia.com
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="pt-6 text-center text-xs text-slate-600">
+      © 2024 Gainz India Peripherals Private Limited. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING WHATSAPP ===================== -->
+<div class="wa-float">
+  <a href="https://wa.me/917200521950?text=Hi%2C%20I%20need%20laptop%20service%20at%20Gainz%20India" target="_blank" rel="noopener" class="wa-btn" aria-label="WhatsApp us">
+    <div class="wa-pulse"></div>
+    <i class="fa-brands fa-whatsapp text-white text-2xl relative z-10"></i>
+    <span class="wa-label">7200521950</span>
+  </a>
+</div>
+
+<!-- ===================== JAVASCRIPT ===================== -->
+<script>
+  // ===================== MOBILE MENU TOGGLE =====================
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu    = document.getElementById('mobileMenu');
+  const menuIcon      = document.getElementById('menuIcon');
+
+  mobileMenuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden', isOpen);
+    menuIcon.className = isOpen ? 'fa-solid fa-bars text-xl' : 'fa-solid fa-xmark text-xl';
+  });
+
+  // Close mobile menu on nav link click
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuIcon.className = 'fa-solid fa-bars text-xl';
+    });
+  });
+
+  // ===================== FAQ ACCORDION =====================
+  const faqToggles = document.querySelectorAll('.faq-toggle');
+  faqToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const answer  = toggle.nextElementSibling;
+      const chevron = toggle.querySelector('.faq-chevron');
+      const isOpen  = answer.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+      document.querySelectorAll('.faq-chevron').forEach(c => c.classList.remove('rotated'));
+
+      // Open clicked if it was closed
+      if (!isOpen) {
+        answer.classList.add('open');
+        chevron.classList.add('rotated');
+      }
+    });
+  });
+
+  // ===================== SMOOTH SCROLL =====================
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const href = a.getAttribute('href');
+      if (href === '#') return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // ===================== FILE UPLOAD DISPLAY =====================
+  const fileInput = document.getElementById('deviceImages');
+  const fileLabel = document.getElementById('fileLabel');
+  if (fileInput) {
+    fileInput.addEventListener('change', () => {
+      const files = fileInput.files;
+      if (files && files.length > 0) {
+        fileLabel.textContent = files.length === 1
+          ? files[0].name
+          : `${files.length} files selected`;
+      } else {
+        fileLabel.textContent = 'Click to upload images of your device';
+      }
+    });
+  }
+
+  // ===================== SUCCESS MESSAGE =====================
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('submitted') === 'true') {
+    const successBox  = document.getElementById('successBox');
+    const serviceForm = document.getElementById('serviceForm');
+    if (successBox)  successBox.classList.add('show');
+    if (serviceForm) serviceForm.style.display = 'none';
+    successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  // ===================== FORM VALIDATION =====================
+  const serviceForm = document.getElementById('serviceForm');
+  if (serviceForm) {
+    serviceForm.addEventListener('submit', function(e) {
+      let valid = true;
+
+      function checkField(id, errId, msg) {
+        const field = document.getElementById(id);
+        const err   = document.getElementById(errId);
+        if (!field || !err) return;
+        if (!field.value.trim()) {
+          field.classList.add('error');
+          err.textContent = msg;
+          err.classList.add('show');
+          valid = false;
+        } else {
+          field.classList.remove('error');
+          err.classList.remove('show');
+        }
+      }
+
+      function checkEmail(id, errId) {
+        const field = document.getElementById(id);
+        const err   = document.getElementById(errId);
+        if (!field || !err) return;
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!re.test(field.value.trim())) {
+          field.classList.add('error');
+          err.textContent = 'Please enter a valid email address.';
+          err.classList.add('show');
+          valid = false;
+        } else {
+          field.classList.remove('error');
+          err.classList.remove('show');
+        }
+      }
+
+      checkField('fullName',        'fullNameErr',        'Please enter your name.');
+      checkField('mobile',          'mobileErr',          'Please enter a valid mobile number.');
+      checkEmail('email',           'emailErr');
+      checkField('city',            'cityErr',            'Please enter your city.');
+      checkField('deviceType',      'deviceTypeErr',      'Please select a device type.');
+      checkField('brand',           'brandErr',           'Please select a brand.');
+      checkField('modelNumber',     'modelNumberErr',     'Please enter the model number.');
+      checkField('serviceRequired', 'serviceRequiredErr', 'Please select a service.');
+      checkField('problemDesc',     'problemDescErr',     'Please describe the problem.');
+
+      // Consent
+      const consentBox = document.getElementById('consent');
+      const consentErr = document.getElementById('consentErr');
+      if (consentBox && !consentBox.checked) {
+        consentErr.classList.add('show');
+        valid = false;
+      } else if (consentErr) {
+        consentErr.classList.remove('show');
+      }
+
+      if (!valid) {
+        e.preventDefault();
+        // Scroll to first error
+        const firstError = serviceForm.querySelector('.form-input.error, input.error');
+        if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      // Show spinner
+      const btn     = document.getElementById('submitBtn');
+      const spinner = document.getElementById('submitSpinner');
+      if (btn)     btn.disabled = true;
+      if (spinner) spinner.classList.add('show');
+    });
+
+    // Live validation on change
+    ['fullName','mobile','email','city','deviceType','brand','modelNumber','serviceRequired','problemDesc'].forEach(id => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.addEventListener('input', () => {
+        if (el.value.trim()) {
+          el.classList.remove('error');
+        }
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
