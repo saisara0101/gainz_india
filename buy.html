@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy Laptops & Desktops | Gainz India Peripherals Private Limited</title>
+  <meta name="description" content="Buy new, refurbished and outlet Dell laptops, desktops and IT products from Gainz India Peripherals Private Limited. Quality-tested systems, competitive pricing and expert support." />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            dell: {
+              50: '#eff8ff', 100: '#dbeafe', 200: '#bfdbfe',
+              500: '#0076CE', 600: '#0062ab', 700: '#004f8a',
+              800: '#003a66', 900: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { scroll-behavior: smooth; }
+
+    .gradient-hero {
+      background: radial-gradient(ellipse at 30% 50%, #0d2244 0%, #0b1329 60%, #061020 100%);
+    }
+
+    .hero-bg-container {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      background-color: #070d1e;
+    }
+
+    .hero-bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(0.36) contrast(1.1) saturate(1.1);
+      transform: scale(1.03);
+    }
+
+    .hero-green-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(7, 13, 30, 0.94) 0%, rgba(7, 13, 30, 0.82) 48%, rgba(6, 78, 59, 0.65) 100%);
+    }
+
+    .hero-radial-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 18% 30%, rgba(16, 185, 129, 0.22) 0%, transparent 55%),
+                  radial-gradient(circle at 82% 70%, rgba(0, 118, 206, 0.25) 0%, transparent 60%);
+    }
+
+    .dot-grid {
+      background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .glass-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0,118,206,0.15);
+    }
+
+    .feature-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .pill-active {
+      background-color: #0076CE !important;
+      color: white !important;
+      border-color: #0076CE !important;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.3s ease;
+    }
+    .faq-answer.open {
+      max-height: 300px;
+    }
+
+    .floating-wa {
+      animation: pulse-wa 2.5s infinite;
+    }
+    @keyframes pulse-wa {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(5,150,105,0.5); }
+      50% { box-shadow: 0 0 0 10px rgba(5,150,105,0); }
+    }
+
+    .step-line::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, #0076CE, #bfdbfe);
+      transform: translateY(-50%);
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #60a5fa, #0076CE, #93c5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .announcement-bar {
+      background: #0b1329;
+      border-bottom: 1px solid rgba(0,118,206,0.3);
+    }
+
+    input[type="range"] {
+      accent-color: #0076CE;
+    }
+
+    @media (max-width: 768px) {
+      .step-line::after { display: none; }
+    }
+  </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800">
+
+<!-- ==============================
+     ANNOUNCEMENT BAR
+     ============================== -->
+<div class="announcement-bar text-white text-sm py-2 px-4">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
+    <span class="text-center sm:text-left">
+      🎉 New Arrivals: Latest Dell Laptops &amp; Refurbished Systems Now Available!
+    </span>
+    <div class="flex items-center gap-4 text-slate-300 text-xs">
+      <a href="tel:+917200521950" class="flex items-center gap-1 hover:text-white transition-colors">
+        <i class="fa fa-phone text-dell-500"></i> (+91) 72005 21950
+      </a>
+      <a href="https://wa.me/917200521950" target="_blank" class="flex items-center gap-1 hover:text-white transition-colors">
+        <i class="fab fa-whatsapp text-emerald-400"></i> 7200521950
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ==============================
+     STICKY GLASS NAVIGATION
+     ============================== -->
+<nav class="glass-nav sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-9 h-9 bg-emerald-600 rounded-lg flex items-center justify-center font-bold text-white text-lg shadow-lg">G</div>
+        <div class="leading-tight">
+          <div class="font-bold text-white text-base tracking-wide">GAINZ INDIA</div>
+          <div class="text-slate-400 text-[10px] font-medium -mt-0.5 tracking-wider">Peripherals Private Limited</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="text-slate-300 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-white/10">Home</a>
+        <a href="buy.html" class="text-white px-4 py-2 rounded-lg text-sm font-semibold bg-dell-500/20 border border-dell-500/40 transition-colors">BUY</a>
+        <a href="sell.html" class="text-slate-300 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-white/10">SELL</a>
+        <a href="service.html" class="text-sky-400 hover:text-sky-300 px-4 py-2 rounded-lg text-sm font-semibold transition-colors hover:bg-white/10 flex items-center gap-1"><i class="fa-solid fa-screwdriver-wrench text-xs"></i> SERVICE</a>
+        <a href="https://gainzindia.com/contactus" target="_blank" class="text-slate-300 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-white/10">Contact</a>
+      </div>
+
+      <!-- Desktop CTA Buttons -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="https://gainzindia.com/contactus" target="_blank"
+           class="border border-dell-500 text-dell-200 hover:bg-dell-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">
+          Get a Quote
+        </a>
+        <a href="https://wa.me/917200521950" target="_blank"
+           class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="hamburger" class="md:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Toggle menu">
+        <i class="fa fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-slate-900/95">
+    <div class="px-4 py-4 flex flex-col gap-2">
+      <a href="index.html" class="text-slate-300 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/10 transition-colors">Home</a>
+      <a href="buy.html" class="text-white px-3 py-2 rounded-lg text-sm font-semibold bg-dell-500/20">BUY</a>
+      <a href="sell.html" class="text-slate-300 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/10 transition-colors">SELL</a>
+      <a href="service.html" class="text-sky-400 hover:text-sky-300 px-3 py-2 rounded-lg text-sm font-semibold hover:bg-white/10 transition-colors flex items-center gap-1"><i class="fa-solid fa-screwdriver-wrench text-xs"></i> SERVICE</a>
+      <a href="https://gainzindia.com/contactus" target="_blank" class="text-slate-300 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/10 transition-colors">Contact</a>
+      <div class="border-t border-white/10 pt-3 mt-1 flex flex-col gap-2">
+        <a href="https://gainzindia.com/contactus" target="_blank"
+           class="border border-dell-500 text-dell-200 hover:bg-dell-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold text-center transition-all">
+          Get a Quote
+        </a>
+        <a href="https://wa.me/917200521950" target="_blank"
+           class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-sm font-semibold text-center transition-all flex items-center justify-center gap-2">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ==============================
+     SECTION 1 — HERO
+     ============================== -->
+<section class="relative overflow-hidden text-white min-h-[600px] flex items-center">
+  <!-- Hero Background Image & Layered Tech Gradients -->
+  <div class="hero-bg-container pointer-events-none">
+    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=2000&q=80" 
+         alt="Gainz India - Buy Laptops, Desktops and IT Equipment" 
+         class="hero-bg-img" 
+         loading="eager" />
+    <!-- Gainz India Green & Deep Navy Gradient Overlays for Maximum Legibility & Brand Matching -->
+    <div class="hero-green-overlay"></div>
+    <div class="hero-radial-overlay"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0b1329] via-transparent to-[#0b1329]/70"></div>
+    <div class="absolute inset-0 dot-grid opacity-25"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10 w-full">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left Content -->
+      <div>
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 bg-dell-500/15 border border-dell-500/30 text-dell-200 text-sm font-semibold px-4 py-2 rounded-full mb-6">
+          <span class="text-dell-400">✦</span> Authorized Dell Dealer — New &amp; Refurbished
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+          Find the Right<br/>
+          <span class="gradient-text">Technology</span> at the<br/>
+          Right Price
+        </h1>
+
+        <p class="text-slate-300 text-lg leading-relaxed mb-8 max-w-lg">
+          Explore high-quality new, refurbished and outlet laptops, desktops and IT products at competitive prices. Get reliable technology backed by expert support from Gainz India.
+        </p>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="#products"
+             class="bg-dell-500 hover:bg-dell-600 text-white px-6 py-3 rounded-xl font-bold text-sm tracking-wide transition-all shadow-lg shadow-dell-500/30 hover:shadow-dell-500/50">
+            <i class="fa fa-search mr-2"></i> EXPLORE PRODUCTS
+          </a>
+          <a href="https://gainzindia.com/contactus" target="_blank"
+             class="border-2 border-white/30 hover:border-white text-white hover:bg-white/10 px-6 py-3 rounded-xl font-bold text-sm tracking-wide transition-all">
+            <i class="fa fa-file-alt mr-2"></i> GET A CUSTOM QUOTE
+          </a>
+          <a href="https://wa.me/917200521950" target="_blank"
+             class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-xl font-bold text-sm tracking-wide transition-all flex items-center gap-2">
+            <i class="fab fa-whatsapp text-base"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Stats Card -->
+      <div class="flex justify-center lg:justify-end">
+        <div class="glass-card rounded-2xl p-8 w-full max-w-sm">
+          <h3 class="text-white font-bold text-lg mb-6 text-center">What We Offer</h3>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-4">
+              <div class="w-10 h-10 bg-dell-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-boxes-stacked text-dell-400"></i>
+              </div>
+              <div>
+                <div class="text-white font-bold text-xl">500+</div>
+                <div class="text-slate-400 text-sm">Products Available</div>
+              </div>
+            </li>
+            <li class="flex items-center gap-4">
+              <div class="w-10 h-10 bg-emerald-600/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-recycle text-emerald-400"></i>
+              </div>
+              <div class="text-slate-200 font-semibold">New &amp; Refurbished</div>
+            </li>
+            <li class="flex items-center gap-4">
+              <div class="w-10 h-10 bg-dell-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-shield-halved text-dell-400"></i>
+              </div>
+              <div class="text-slate-200 font-semibold">Quality Tested Systems</div>
+            </li>
+            <li class="flex items-center gap-4">
+              <div class="w-10 h-10 bg-purple-600/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-building text-purple-400"></i>
+              </div>
+              <div class="text-slate-200 font-semibold">Corporate Bulk Orders</div>
+            </li>
+            <li class="flex items-center gap-4">
+              <div class="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-headset text-amber-400"></i>
+              </div>
+              <div class="text-slate-200 font-semibold">Expert Technical Support</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 2 — PRODUCT SEARCH & CATEGORIES
+     ============================== -->
+<section id="products" class="bg-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section Header -->
+    <div class="text-center mb-10">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">Browse Our Product Catalogue</h2>
+      <p class="text-slate-500 text-lg">New laptops, refurbished systems and IT equipment for every budget</p>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="flex gap-3 mb-8 max-w-3xl mx-auto">
+      <div class="relative flex-1">
+        <i class="fa fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+        <input id="search-input" type="text" placeholder="Search by brand, model or product name"
+               class="w-full pl-11 pr-4 py-3.5 border border-slate-200 rounded-xl text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-dell-500 focus:border-transparent text-sm shadow-sm" />
+      </div>
+      <button class="bg-dell-500 hover:bg-dell-600 text-white px-6 py-3.5 rounded-xl font-semibold text-sm transition-all shadow-sm">
+        <i class="fa fa-search mr-1.5"></i> Search
+      </button>
+    </div>
+
+    <!-- Category Pills -->
+    <div class="flex gap-3 overflow-x-auto pb-3 mb-10 scrollbar-hide" id="category-pills">
+      <button class="category-pill pill-active flex-shrink-0 px-5 py-2.5 rounded-full border border-slate-200 text-sm font-semibold transition-all hover:border-dell-500 whitespace-nowrap" data-category="all">🖥️ Premium Laptops</button>
+      <button class="category-pill flex-shrink-0 px-5 py-2.5 rounded-full border border-slate-200 text-slate-600 text-sm font-semibold transition-all hover:border-dell-500 whitespace-nowrap" data-category="essential">💻 Essential Laptops</button>
+      <button class="category-pill flex-shrink-0 px-5 py-2.5 rounded-full border border-slate-200 text-slate-600 text-sm font-semibold transition-all hover:border-dell-500 whitespace-nowrap" data-category="ai">🤖 AI Laptops</button>
+      <button class="category-pill flex-shrink-0 px-5 py-2.5 rounded-full border border-slate-200 text-slate-600 text-sm font-semibold transition-all hover:border-dell-500 whitespace-nowrap" data-category="gaming">🎮 Gaming Laptops</button>
+      <button class="category-pill flex-shrink-0 px-5 py-2.5 rounded-full border border-slate-200 text-slate-600 text-sm font-semibold transition-all hover:border-dell-500 whitespace-nowrap" data-category="refurbished">🔄 Refurbished Laptops</button>
+      <button class="category-pill flex-shrink-0 px-5 py-2.5 rounded-full border border-slate-200 text-slate-600 text-sm font-semibold transition-all hover:border-dell-500 whitespace-nowrap" data-category="desktop">🖥️ Desktops</button>
+      <button class="category-pill flex-shrink-0 px-5 py-2.5 rounded-full border border-slate-200 text-slate-600 text-sm font-semibold transition-all hover:border-dell-500 whitespace-nowrap" data-category="workstation">⚙️ Workstations</button>
+      <button class="category-pill flex-shrink-0 px-5 py-2.5 rounded-full border border-slate-200 text-slate-600 text-sm font-semibold transition-all hover:border-dell-500 whitespace-nowrap" data-category="peripherals">🖨️ Monitors &amp; Peripherals</button>
+    </div>
+
+    <!-- Filter + Products Layout -->
+    <div class="flex gap-8">
+
+      <!-- Filter Sidebar -->
+      <aside class="hidden lg:block w-64 flex-shrink-0">
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sticky top-24 space-y-6">
+          <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2">
+            <i class="fa fa-filter text-dell-500 text-sm"></i> Filter Products
+          </h3>
+
+          <!-- Brand -->
+          <div>
+            <p class="font-semibold text-slate-700 text-sm mb-3">Brand</p>
+            <div class="space-y-2">
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" checked /> Dell</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> HP</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> Lenovo</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> Apple</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> Acer</label>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-200"></div>
+
+          <!-- Condition -->
+          <div>
+            <p class="font-semibold text-slate-700 text-sm mb-3">Condition</p>
+            <div class="space-y-2">
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" checked /> New</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" checked /> Refurbished</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> Outlet</label>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-200"></div>
+
+          <!-- Processor -->
+          <div>
+            <p class="font-semibold text-slate-700 text-sm mb-3">Processor</p>
+            <div class="space-y-2">
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> Intel Core i3</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" checked /> Intel Core i5</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> Intel Core i7</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> Intel Core i9</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> AMD Ryzen</label>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-200"></div>
+
+          <!-- RAM -->
+          <div>
+            <p class="font-semibold text-slate-700 text-sm mb-3">RAM</p>
+            <div class="space-y-2">
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> 4GB</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" checked /> 8GB</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" checked /> 16GB</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> 32GB</label>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-200"></div>
+
+          <!-- Storage -->
+          <div>
+            <p class="font-semibold text-slate-700 text-sm mb-3">Storage</p>
+            <div class="space-y-2">
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> 256GB SSD</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" checked /> 512GB SSD</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> 1TB SSD</label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-dell-500 w-4 h-4" /> 2TB SSD</label>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-200"></div>
+
+          <!-- Price Range -->
+          <div>
+            <p class="font-semibold text-slate-700 text-sm mb-3">Price Range</p>
+            <input type="range" id="price-slider" min="10000" max="200000" value="200000" step="5000" class="w-full mb-2" />
+            <div class="flex justify-between text-xs text-slate-500">
+              <span>₹10,000</span>
+              <span id="price-display" class="font-semibold text-dell-500">₹2,00,000</span>
+            </div>
+          </div>
+
+          <button class="w-full bg-dell-500 hover:bg-dell-600 text-white py-2.5 rounded-xl font-semibold text-sm transition-all">
+            Apply Filters
+          </button>
+        </div>
+      </aside>
+
+      <!-- Mobile Filter Toggle -->
+      <div class="lg:hidden mb-4 w-full" id="mobile-filter-wrapper">
+        <!-- Button shown inline before products on mobile -->
+      </div>
+
+      <!-- Products Message placeholder (shown below in featured section) -->
+      <div class="flex-1">
+        <div class="bg-dell-50 border border-dell-200 rounded-2xl p-8 text-center">
+          <div class="w-16 h-16 bg-dell-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i class="fa fa-layer-group text-dell-500 text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 text-lg mb-2">Our Full Product Catalogue</h3>
+          <p class="text-slate-500 text-sm mb-4">Browse our featured products below or contact our sales team for the complete inventory and real-time availability.</p>
+          <div class="flex flex-wrap gap-3 justify-center">
+            <a href="#featured" class="bg-dell-500 hover:bg-dell-600 text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all">
+              <i class="fa fa-arrow-down mr-1.5"></i> View Featured Products
+            </a>
+            <a href="https://wa.me/917200521950?text=Hi%2C%20I%27d%20like%20to%20see%20your%20full%20product%20catalogue" target="_blank"
+               class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all flex items-center gap-2">
+              <i class="fab fa-whatsapp"></i> Request Catalogue
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Filter Toggle Button -->
+        <div class="lg:hidden mt-4">
+          <button id="mobile-filter-btn"
+            class="border border-dell-500 text-dell-500 hover:bg-dell-50 px-5 py-2.5 rounded-xl font-semibold text-sm transition-all flex items-center gap-2 w-full justify-center">
+            <i class="fa fa-sliders"></i> Show Filters
+          </button>
+          <!-- Mobile Filter Panel -->
+          <div id="mobile-filter-panel" class="hidden mt-4 bg-slate-50 border border-slate-200 rounded-2xl p-6 space-y-5">
+            <div class="grid grid-cols-2 gap-5">
+              <div>
+                <p class="font-semibold text-slate-700 text-sm mb-2">Brand</p>
+                <div class="space-y-1.5">
+                  <label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="accent-dell-500" checked /> Dell</label>
+                  <label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="accent-dell-500" /> HP</label>
+                  <label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="accent-dell-500" /> Lenovo</label>
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold text-slate-700 text-sm mb-2">Condition</p>
+                <div class="space-y-1.5">
+                  <label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="accent-dell-500" checked /> New</label>
+                  <label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="accent-dell-500" checked /> Refurbished</label>
+                </div>
+              </div>
+            </div>
+            <button class="w-full bg-dell-500 text-white py-2.5 rounded-xl font-semibold text-sm">Apply Filters</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 3 — FEATURED PRODUCTS
+     ============================== -->
+<section id="featured" class="bg-slate-100 py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center gap-2 bg-dell-500/10 border border-dell-200 text-dell-600 text-sm font-semibold px-4 py-2 rounded-full mb-4">
+        <i class="fa fa-star text-xs"></i> Best Sellers
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">Explore Our Best-Selling Products</h2>
+      <p class="text-slate-500 text-lg">Quality-verified laptops and desktops with expert support</p>
+    </div>
+
+    <!-- Search summary (shown when searching) -->
+    <div id="search-summary" class="hidden mb-6 text-sm text-slate-500 font-medium"></div>
+
+    <!-- Products Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="products-grid">
+
+      <!-- Product 1: Latitude 5320 -->
+      <div class="product-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden" data-search="latitude 5320 dell i5 11th gen refurbished touch">
+        <div class="relative">
+          <div class="bg-gradient-to-br from-slate-100 to-slate-200 h-44 flex items-center justify-center">
+            <i class="fa fa-laptop text-7xl text-slate-400"></i>
+          </div>
+          <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">Refurbished</span>
+          <span class="absolute top-3 right-3 bg-slate-800 text-white text-xs font-semibold px-3 py-1 rounded-full">Dell</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-slate-800 text-lg mb-1">Latitude 5320</h3>
+          <p class="text-dell-500 text-sm font-semibold mb-3">Dell Business Laptop</p>
+          <div class="flex flex-wrap gap-1.5 mb-3">
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">i5-11th Gen 1145G7</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">16GB RAM</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">256GB SSD</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">13.3" FHD Touch</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Win 11 Pro</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Intel Iris XE</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Carbon Fiber</span>
+          </div>
+          <div class="flex items-center gap-1.5 mb-4">
+            <i class="fa fa-shield-halved text-emerald-600 text-xs"></i>
+            <span class="text-emerald-700 text-xs font-semibold">3 Years Warranty</span>
+          </div>
+          <div class="flex gap-2">
+            <a href="https://gainzindia.com/contactus" target="_blank"
+               class="flex-1 border border-dell-500 text-dell-500 hover:bg-dell-50 py-2.5 rounded-xl text-xs font-bold text-center transition-all">
+              View Details
+            </a>
+            <a href="https://wa.me/917200521950?text=I'm%20interested%20in%20Latitude%205320" target="_blank"
+               class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-2.5 rounded-xl text-xs font-bold text-center transition-all flex items-center justify-center gap-1.5">
+              <i class="fab fa-whatsapp"></i> Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: Inspiron 7440 2-in-1 -->
+      <div class="product-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden" data-search="inspiron 7440 2-in-1 dell i5 13th gen new touch ice blue">
+        <div class="relative">
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 h-44 flex items-center justify-center">
+            <i class="fa fa-laptop text-7xl text-blue-400"></i>
+          </div>
+          <span class="absolute top-3 left-3 bg-dell-500 text-white text-xs font-bold px-3 py-1 rounded-full">New</span>
+          <span class="absolute top-3 right-3 bg-slate-800 text-white text-xs font-semibold px-3 py-1 rounded-full">Dell</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-slate-800 text-lg mb-1">Inspiron 7440 2-in-1</h3>
+          <p class="text-dell-500 text-sm font-semibold mb-3">Dell Convertible Laptop</p>
+          <div class="flex flex-wrap gap-1.5 mb-3">
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">i5-13th Gen 1334U</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">16GB (2×8GB)</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">512GB SSD</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">14" FHD Touch</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Win 11 SL</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Ice Blue</span>
+          </div>
+          <div class="flex items-center gap-1.5 mb-4">
+            <i class="fa fa-shield-halved text-emerald-600 text-xs"></i>
+            <span class="text-emerald-700 text-xs font-semibold">3 Years Warranty</span>
+          </div>
+          <div class="flex gap-2">
+            <a href="https://gainzindia.com/contactus" target="_blank"
+               class="flex-1 border border-dell-500 text-dell-500 hover:bg-dell-50 py-2.5 rounded-xl text-xs font-bold text-center transition-all">
+              View Details
+            </a>
+            <a href="https://wa.me/917200521950?text=I'm%20interested%20in%20Inspiron%207440%202-in-1" target="_blank"
+               class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-2.5 rounded-xl text-xs font-bold text-center transition-all flex items-center justify-center gap-1.5">
+              <i class="fab fa-whatsapp"></i> Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: Gaming 15 5520 -->
+      <div class="product-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden" data-search="gaming 15 5520 dell i5 12th gen rtx 3050 new gaming shadow gray">
+        <div class="relative">
+          <div class="bg-gradient-to-br from-purple-50 to-purple-100 h-44 flex items-center justify-center">
+            <i class="fa fa-gamepad text-7xl text-purple-400"></i>
+          </div>
+          <div class="absolute top-3 left-3 flex gap-1.5">
+            <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">Gaming</span>
+            <span class="bg-dell-500 text-white text-xs font-bold px-3 py-1 rounded-full">New</span>
+          </div>
+          <span class="absolute top-3 right-3 bg-slate-800 text-white text-xs font-semibold px-3 py-1 rounded-full">Dell</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-slate-800 text-lg mb-1">Gaming 15 5520</h3>
+          <p class="text-dell-500 text-sm font-semibold mb-3">Dell Gaming Laptop</p>
+          <div class="flex flex-wrap gap-1.5 mb-3">
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">i5-12th Gen 12500H</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">8GB RAM</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">512GB SSD</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">15.6" FHD</span>
+            <span class="bg-purple-100 text-purple-700 text-xs px-2.5 py-1 rounded-full font-semibold">RTX 3050 4GB</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Shadow Gray</span>
+          </div>
+          <div class="flex items-center gap-1.5 mb-4">
+            <i class="fa fa-shield-halved text-emerald-600 text-xs"></i>
+            <span class="text-emerald-700 text-xs font-semibold">3 Years Warranty</span>
+          </div>
+          <div class="flex gap-2">
+            <a href="https://gainzindia.com/contactus" target="_blank"
+               class="flex-1 border border-dell-500 text-dell-500 hover:bg-dell-50 py-2.5 rounded-xl text-xs font-bold text-center transition-all">
+              View Details
+            </a>
+            <a href="https://wa.me/917200521950?text=I'm%20interested%20in%20Gaming%2015%205520" target="_blank"
+               class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-2.5 rounded-xl text-xs font-bold text-center transition-all flex items-center justify-center gap-1.5">
+              <i class="fab fa-whatsapp"></i> Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: Inspiron 5440 -->
+      <div class="product-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden" data-search="inspiron 5440 dell i5 13th gen new ice blue 1tb ssd">
+        <div class="relative">
+          <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 h-44 flex items-center justify-center">
+            <i class="fa fa-laptop text-7xl text-cyan-400"></i>
+          </div>
+          <span class="absolute top-3 left-3 bg-dell-500 text-white text-xs font-bold px-3 py-1 rounded-full">New</span>
+          <span class="absolute top-3 right-3 bg-slate-800 text-white text-xs font-semibold px-3 py-1 rounded-full">Dell</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-slate-800 text-lg mb-1">Inspiron 5440</h3>
+          <p class="text-dell-500 text-sm font-semibold mb-3">Dell Everyday Laptop</p>
+          <div class="flex flex-wrap gap-1.5 mb-3">
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">i5-13th Gen 1334U</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">16GB (2×8GB)</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">1TB SSD</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">14" FHD</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Win 11 SL</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Ice Blue Plastic</span>
+          </div>
+          <div class="flex items-center gap-1.5 mb-4">
+            <i class="fa fa-shield-halved text-emerald-600 text-xs"></i>
+            <span class="text-emerald-700 text-xs font-semibold">3 Years Warranty</span>
+          </div>
+          <div class="flex gap-2">
+            <a href="https://gainzindia.com/contactus" target="_blank"
+               class="flex-1 border border-dell-500 text-dell-500 hover:bg-dell-50 py-2.5 rounded-xl text-xs font-bold text-center transition-all">
+              View Details
+            </a>
+            <a href="https://wa.me/917200521950?text=I'm%20interested%20in%20Inspiron%205440" target="_blank"
+               class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-2.5 rounded-xl text-xs font-bold text-center transition-all flex items-center justify-center gap-1.5">
+              <i class="fab fa-whatsapp"></i> Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5: EC27250 All-in-One -->
+      <div class="product-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden" data-search="ec27250 all-in-one dell desktop i5 13th gen 27 inch new pearl white">
+        <div class="relative">
+          <div class="bg-gradient-to-br from-slate-50 to-slate-100 h-44 flex items-center justify-center">
+            <i class="fa fa-desktop text-7xl text-slate-400"></i>
+          </div>
+          <div class="absolute top-3 left-3 flex gap-1.5">
+            <span class="bg-dell-500 text-white text-xs font-bold px-3 py-1 rounded-full">New</span>
+            <span class="bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-full">Desktop</span>
+          </div>
+          <span class="absolute top-3 right-3 bg-slate-800 text-white text-xs font-semibold px-3 py-1 rounded-full">Dell</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-slate-800 text-lg mb-1">EC27250 All-in-One</h3>
+          <p class="text-dell-500 text-sm font-semibold mb-3">Dell All-in-One Desktop</p>
+          <div class="flex flex-wrap gap-1.5 mb-3">
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">i5-13th Gen 1334U</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">16GB (2×8GB)</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">512GB SSD</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">27" FHD</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Win 11 SL</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Pearl White</span>
+          </div>
+          <div class="flex items-center gap-1.5 mb-4">
+            <i class="fa fa-shield-halved text-emerald-600 text-xs"></i>
+            <span class="text-emerald-700 text-xs font-semibold">3 Years Warranty</span>
+          </div>
+          <div class="flex gap-2">
+            <a href="https://gainzindia.com/contactus" target="_blank"
+               class="flex-1 border border-dell-500 text-dell-500 hover:bg-dell-50 py-2.5 rounded-xl text-xs font-bold text-center transition-all">
+              View Details
+            </a>
+            <a href="https://wa.me/917200521950?text=I'm%20interested%20in%20EC27250%20All-in-One" target="_blank"
+               class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-2.5 rounded-xl text-xs font-bold text-center transition-all flex items-center justify-center gap-1.5">
+              <i class="fab fa-whatsapp"></i> Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6: ECS1250 Desktop -->
+      <div class="product-card bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden" data-search="ecs1250 desktop dell i5 14th gen new black">
+        <div class="relative">
+          <div class="bg-gradient-to-br from-zinc-100 to-zinc-200 h-44 flex items-center justify-center">
+            <i class="fa fa-server text-7xl text-zinc-500"></i>
+          </div>
+          <div class="absolute top-3 left-3 flex gap-1.5">
+            <span class="bg-dell-500 text-white text-xs font-bold px-3 py-1 rounded-full">New</span>
+            <span class="bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-full">Desktop</span>
+          </div>
+          <span class="absolute top-3 right-3 bg-slate-800 text-white text-xs font-semibold px-3 py-1 rounded-full">Dell</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-slate-800 text-lg mb-1">ECS1250 Desktop</h3>
+          <p class="text-dell-500 text-sm font-semibold mb-3">Dell Compact Desktop</p>
+          <div class="flex flex-wrap gap-1.5 mb-3">
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">i5-14th Gen 14400</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">8GB RAM</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">512GB SSD</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Win 11 SL</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Intel UHD</span>
+            <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-full">Black</span>
+          </div>
+          <div class="flex items-center gap-1.5 mb-4">
+            <i class="fa fa-shield-halved text-emerald-600 text-xs"></i>
+            <span class="text-emerald-700 text-xs font-semibold">3 Years Warranty</span>
+          </div>
+          <div class="flex gap-2">
+            <a href="https://gainzindia.com/contactus" target="_blank"
+               class="flex-1 border border-dell-500 text-dell-500 hover:bg-dell-50 py-2.5 rounded-xl text-xs font-bold text-center transition-all">
+              View Details
+            </a>
+            <a href="https://wa.me/917200521950?text=I'm%20interested%20in%20ECS1250%20Desktop" target="_blank"
+               class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-2.5 rounded-xl text-xs font-bold text-center transition-all flex items-center justify-center gap-1.5">
+              <i class="fab fa-whatsapp"></i> Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end products-grid -->
+
+    <!-- No results message -->
+    <div id="no-results" class="hidden text-center py-16">
+      <i class="fa fa-search text-4xl text-slate-300 mb-4"></i>
+      <p class="text-slate-500 font-semibold text-lg">No products found matching your search.</p>
+      <p class="text-slate-400 text-sm mt-1">Try a different keyword or browse all products above.</p>
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="https://wa.me/917200521950?text=Hi%2C%20I%27d%20like%20to%20see%20more%20products%20from%20Gainz%20India" target="_blank"
+         class="inline-flex items-center gap-2 bg-dell-500 hover:bg-dell-600 text-white px-8 py-3.5 rounded-xl font-bold text-sm transition-all shadow-lg">
+        <i class="fa fa-th-large"></i> View More Products
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 4 — WHY BUY FROM GAINZ INDIA
+     ============================== -->
+<section class="bg-[#0b1329] py-16 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center gap-2 bg-dell-500/15 border border-dell-500/30 text-dell-200 text-sm font-semibold px-4 py-2 rounded-full mb-4">
+        <i class="fa fa-thumbs-up text-xs"></i> Our Promise
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-3">Why Choose Gainz India?</h2>
+      <p class="text-slate-400 text-lg">Trusted technology partner for individuals, businesses and institutions</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div class="feature-card glass-card rounded-2xl p-6 text-center">
+        <div class="w-14 h-14 bg-dell-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <i class="fa fa-shield-halved text-dell-400 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-white text-lg mb-2">Quality-Tested Systems</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Every refurbished system undergoes rigorous testing and quality checks before delivery.</p>
+      </div>
+
+      <div class="feature-card glass-card rounded-2xl p-6 text-center">
+        <div class="w-14 h-14 bg-dell-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <i class="fa fa-indian-rupee-sign text-dell-400 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-white text-lg mb-2">Competitive Pricing</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Get reliable technology at prices that suit your budget — from students to enterprises.</p>
+      </div>
+
+      <div class="feature-card glass-card rounded-2xl p-6 text-center">
+        <div class="w-14 h-14 bg-dell-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <i class="fa fa-building text-dell-400 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-white text-lg mb-2">Bulk &amp; Corporate Orders</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Flexible solutions for businesses, educational institutions and resellers with customised pricing.</p>
+      </div>
+
+      <div class="feature-card glass-card rounded-2xl p-6 text-center">
+        <div class="w-14 h-14 bg-dell-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <i class="fa fa-headset text-dell-400 text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-white text-lg mb-2">Expert Technical Support</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Get professional assistance from our experienced technical team throughout your purchase journey.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 5 — BUYING PROCESS
+     ============================== -->
+<section class="bg-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-14">
+      <div class="inline-flex items-center gap-2 bg-dell-50 border border-dell-200 text-dell-600 text-sm font-semibold px-4 py-2 rounded-full mb-4">
+        <i class="fa fa-list-check text-xs"></i> Simple Process
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">Your Next Computer in 4 Simple Steps</h2>
+      <p class="text-slate-500 text-lg">From browsing to delivery — here's how it works</p>
+    </div>
+
+    <!-- Desktop Stepper -->
+    <div class="hidden md:grid grid-cols-4 gap-0 relative">
+      <!-- Connecting line -->
+      <div class="absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-dell-200 via-dell-500 to-dell-200 z-0"></div>
+
+      <!-- Step 1 -->
+      <div class="flex flex-col items-center text-center px-4 relative z-10">
+        <div class="w-16 h-16 bg-dell-500 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-dell-500/30">
+          <i class="fa fa-search text-white text-2xl"></i>
+        </div>
+        <div class="w-7 h-7 bg-dell-500 text-white text-xs font-bold rounded-full flex items-center justify-center mb-3">1</div>
+        <h3 class="font-bold text-slate-800 text-base mb-2">Explore Products</h3>
+        <p class="text-slate-500 text-sm">Browse our range of laptops, desktops and IT equipment online or visit us.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flex flex-col items-center text-center px-4 relative z-10">
+        <div class="w-16 h-16 bg-dell-100 rounded-2xl flex items-center justify-center mb-4">
+          <i class="fa fa-check-circle text-dell-500 text-2xl"></i>
+        </div>
+        <div class="w-7 h-7 bg-dell-500 text-white text-xs font-bold rounded-full flex items-center justify-center mb-3">2</div>
+        <h3 class="font-bold text-slate-800 text-base mb-2">Choose Your System</h3>
+        <p class="text-slate-500 text-sm">Compare specifications and select the right product for your needs and budget.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex flex-col items-center text-center px-4 relative z-10">
+        <div class="w-16 h-16 bg-dell-100 rounded-2xl flex items-center justify-center mb-4">
+          <i class="fa fa-comments text-dell-500 text-2xl"></i>
+        </div>
+        <div class="w-7 h-7 bg-dell-500 text-white text-xs font-bold rounded-full flex items-center justify-center mb-3">3</div>
+        <h3 class="font-bold text-slate-800 text-base mb-2">Request a Quote</h3>
+        <p class="text-slate-500 text-sm">Contact our sales team for pricing, availability and bulk enquiries via WhatsApp or email.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="flex flex-col items-center text-center px-4 relative z-10">
+        <div class="w-16 h-16 bg-dell-100 rounded-2xl flex items-center justify-center mb-4">
+          <i class="fa fa-box text-dell-500 text-2xl"></i>
+        </div>
+        <div class="w-7 h-7 bg-dell-500 text-white text-xs font-bold rounded-full flex items-center justify-center mb-3">4</div>
+        <h3 class="font-bold text-slate-800 text-base mb-2">Get Your Product</h3>
+        <p class="text-slate-500 text-sm">Complete your order with assistance from the Gainz India team and receive your system.</p>
+      </div>
+    </div>
+
+    <!-- Mobile Stepper -->
+    <div class="md:hidden space-y-6">
+      <div class="flex gap-4 items-start">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-dell-500 rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
+            <i class="fa fa-search text-white"></i>
+          </div>
+          <div class="w-0.5 h-full bg-dell-200 mt-2 flex-grow min-h-[2rem]"></div>
+        </div>
+        <div class="pb-4">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="w-6 h-6 bg-dell-500 text-white text-xs font-bold rounded-full flex items-center justify-center">1</span>
+            <h3 class="font-bold text-slate-800">Explore Products</h3>
+          </div>
+          <p class="text-slate-500 text-sm">Browse our range of laptops, desktops and IT equipment online or visit us.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-dell-100 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i class="fa fa-check-circle text-dell-500"></i>
+          </div>
+          <div class="w-0.5 h-full bg-dell-200 mt-2 flex-grow min-h-[2rem]"></div>
+        </div>
+        <div class="pb-4">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="w-6 h-6 bg-dell-500 text-white text-xs font-bold rounded-full flex items-center justify-center">2</span>
+            <h3 class="font-bold text-slate-800">Choose Your System</h3>
+          </div>
+          <p class="text-slate-500 text-sm">Compare specifications and select the right product for your needs and budget.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-dell-100 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i class="fa fa-comments text-dell-500"></i>
+          </div>
+          <div class="w-0.5 h-full bg-dell-200 mt-2 flex-grow min-h-[2rem]"></div>
+        </div>
+        <div class="pb-4">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="w-6 h-6 bg-dell-500 text-white text-xs font-bold rounded-full flex items-center justify-center">3</span>
+            <h3 class="font-bold text-slate-800">Request a Quote</h3>
+          </div>
+          <p class="text-slate-500 text-sm">Contact our sales team for pricing, availability and bulk enquiries via WhatsApp or email.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-dell-100 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i class="fa fa-box text-dell-500"></i>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="w-6 h-6 bg-dell-500 text-white text-xs font-bold rounded-full flex items-center justify-center">4</span>
+            <h3 class="font-bold text-slate-800">Get Your Product</h3>
+          </div>
+          <p class="text-slate-500 text-sm">Complete your order with assistance from the Gainz India team and receive your system.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="https://gainzindia.com/contactus" target="_blank"
+         class="inline-flex items-center gap-2 bg-dell-500 hover:bg-dell-600 text-white px-8 py-3.5 rounded-xl font-bold text-sm transition-all shadow-lg shadow-dell-500/30">
+        <i class="fa fa-arrow-right"></i> Start the Process — Contact Us
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 6 — BULK PURCHASE CTA
+     ============================== -->
+<section class="bg-gradient-to-br from-emerald-700 to-emerald-900 py-14 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="w-14 h-14 bg-white/15 rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fa fa-boxes-stacked text-white text-2xl"></i>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Looking for Bulk Laptop &amp; Desktop Orders?</h2>
+      <p class="text-emerald-100 text-lg leading-relaxed mb-8">
+        Equip your office, school, college or business with reliable IT solutions. Gainz India offers competitive bulk pricing and customised hardware solutions based on your requirements.
+      </p>
+      <a href="https://gainzindia.com/contactus" target="_blank"
+         class="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-emerald-800 px-8 py-4 rounded-xl font-bold text-sm tracking-wide transition-all">
+        <i class="fa fa-file-invoice"></i> REQUEST A BULK QUOTE
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 7 — FAQ
+     ============================== -->
+<section class="bg-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center gap-2 bg-slate-100 border border-slate-200 text-slate-600 text-sm font-semibold px-4 py-2 rounded-full mb-4">
+        <i class="fa fa-circle-question text-xs"></i> FAQs
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">Frequently Asked Questions</h2>
+      <p class="text-slate-500 text-lg">Everything you need to know before you buy</p>
+    </div>
+
+    <div class="max-w-3xl mx-auto space-y-3" id="faq-container">
+
+      <!-- FAQ 1 -->
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition-colors gap-4">
+          <span class="font-semibold text-slate-800 text-sm">What types of laptops and desktops are available?</span>
+          <i class="fa fa-chevron-down text-dell-500 text-sm flex-shrink-0 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-500 text-sm pb-5 leading-relaxed">We offer new Dell laptops and desktops, refurbished systems, gaming laptops, workstations and monitors. Our catalogue spans a wide range of configurations to suit students, professionals and enterprises.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition-colors gap-4">
+          <span class="font-semibold text-slate-800 text-sm">Do you sell refurbished Dell laptops?</span>
+          <i class="fa fa-chevron-down text-dell-500 text-sm flex-shrink-0 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-500 text-sm pb-5 leading-relaxed">Yes, we have quality-tested refurbished Dell laptops available across various configurations including business laptops, consumer laptops and thin-and-light models at competitive prices.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition-colors gap-4">
+          <span class="font-semibold text-slate-800 text-sm">Are your refurbished products quality tested?</span>
+          <i class="fa fa-chevron-down text-dell-500 text-sm flex-shrink-0 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-500 text-sm pb-5 leading-relaxed">Yes, all refurbished systems go through rigorous quality and functionality checks before being made available for sale. We ensure only reliable, working systems reach our customers.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition-colors gap-4">
+          <span class="font-semibold text-slate-800 text-sm">Do you provide warranty?</span>
+          <i class="fa fa-chevron-down text-dell-500 text-sm flex-shrink-0 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-500 text-sm pb-5 leading-relaxed">Warranty terms vary by product. Many of our systems come with manufacturer warranty. Our team can advise you during enquiry on specific warranty coverage for each product.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition-colors gap-4">
+          <span class="font-semibold text-slate-800 text-sm">Can I purchase laptops in bulk?</span>
+          <i class="fa fa-chevron-down text-dell-500 text-sm flex-shrink-0 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-500 text-sm pb-5 leading-relaxed">Yes, we welcome bulk orders from businesses, schools and resellers. Contact our team for bulk pricing, special discounts and customised procurement plans tailored to your requirements.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition-colors gap-4">
+          <span class="font-semibold text-slate-800 text-sm">Do you offer corporate IT solutions?</span>
+          <i class="fa fa-chevron-down text-dell-500 text-sm flex-shrink-0 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-500 text-sm pb-5 leading-relaxed">Yes, Gainz India provides IT procurement and hardware solutions for corporates and institutions. We offer end-to-end support from product selection to deployment for enterprise clients.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition-colors gap-4">
+          <span class="font-semibold text-slate-800 text-sm">How can I check product availability?</span>
+          <i class="fa fa-chevron-down text-dell-500 text-sm flex-shrink-0 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-500 text-sm pb-5 leading-relaxed">Contact our sales team via WhatsApp at 7200521950 or email at sales@gainzindia.com for real-time availability of any specific product or configuration.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 8 -->
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition-colors gap-4">
+          <span class="font-semibold text-slate-800 text-sm">How can I request a quotation?</span>
+          <i class="fa fa-chevron-down text-dell-500 text-sm flex-shrink-0 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-answer px-5 pb-0">
+          <p class="text-slate-500 text-sm pb-5 leading-relaxed">Fill out our enquiry form at gainzindia.com/contactus or WhatsApp us at 7200521950 for a prompt quotation. We respond to all enquiries within business hours.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 8 — CROSS NAVIGATION BANNER
+     ============================== -->
+<section class="bg-gradient-to-r from-dell-700 to-dell-900 py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-5 text-white">
+      <div class="text-center sm:text-left">
+        <p class="text-dell-200 text-sm font-medium mb-1">💡 Looking to sell your old laptop or desktop?</p>
+        <h3 class="font-bold text-xl">Turn your old device into cash with Gainz India</h3>
+      </div>
+      <a href="sell.html"
+         class="flex-shrink-0 bg-white text-dell-700 hover:bg-dell-50 px-7 py-3.5 rounded-xl font-bold text-sm transition-all shadow-lg flex items-center gap-2">
+        <i class="fa fa-arrow-right"></i> SELL YOUR DEVICE
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     FOOTER
+     ============================== -->
+<footer class="bg-slate-900 text-white pt-14 pb-6">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+
+      <!-- Brand -->
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center font-bold text-white text-xl">G</div>
+          <div>
+            <div class="font-bold text-white">GAINZ INDIA</div>
+            <div class="text-slate-400 text-xs">Peripherals Private Limited</div>
+          </div>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed">Authorized Dell dealer in Chennai, specializing in new, refurbished and outlet laptops, desktops and IT products.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-bold text-white mb-4">Quick Links</h4>
+        <ul class="space-y-2.5">
+          <li><a href="index.html" class="text-slate-400 hover:text-white text-sm transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-dell-500"></i> Home</a></li>
+          <li><a href="buy.html" class="text-slate-400 hover:text-white text-sm transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-dell-500"></i> Buy</a></li>
+          <li><a href="sell.html" class="text-slate-400 hover:text-white text-sm transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-dell-500"></i> Sell</a></li>
+          <li><a href="https://gainzindia.com/contactus" target="_blank" class="text-slate-400 hover:text-white text-sm transition-colors flex items-center gap-2"><i class="fa fa-chevron-right text-xs text-dell-500"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="sm:col-span-2 lg:col-span-2">
+        <h4 class="font-bold text-white mb-4">Contact Us</h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="tel:+917200521950" class="flex items-start gap-3 text-slate-400 hover:text-white text-sm transition-colors group">
+              <div class="w-8 h-8 bg-dell-500/15 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-dell-500/30">
+                <i class="fa fa-phone text-dell-400 text-xs"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500">Phone</div>
+                <div>(+91) 72005 21950</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/917200521950" target="_blank" class="flex items-start gap-3 text-slate-400 hover:text-white text-sm transition-colors group">
+              <div class="w-8 h-8 bg-emerald-600/15 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-emerald-600/30">
+                <i class="fab fa-whatsapp text-emerald-400 text-xs"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500">WhatsApp</div>
+                <div>7200521950</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:sales@gainzindia.com" class="flex items-start gap-3 text-slate-400 hover:text-white text-sm transition-colors group">
+              <div class="w-8 h-8 bg-dell-500/15 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-dell-500/30">
+                <i class="fa fa-envelope text-dell-400 text-xs"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500">Email</div>
+                <div>sales@gainzindia.com</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-slate-500 text-sm text-center sm:text-left">© 2024 Gainz India Peripherals Private Limited. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/917200521950" target="_blank" class="w-8 h-8 bg-slate-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-colors">
+          <i class="fab fa-whatsapp text-slate-400 hover:text-white text-sm"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ==============================
+     FLOATING WHATSAPP BUTTON
+     ============================== -->
+<a href="https://wa.me/917200521950?text=Hi%2C%20I%27m%20interested%20in%20buying%20a%20laptop%20from%20Gainz%20India"
+   target="_blank"
+   class="fixed bottom-6 right-6 z-50 flex items-center gap-3 group">
+  <!-- Label (desktop) -->
+  <div class="hidden sm:flex items-center bg-slate-900/90 text-white text-xs font-semibold px-3 py-2 rounded-full border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    7200521950
+  </div>
+  <!-- Button -->
+  <div class="floating-wa w-14 h-14 bg-emerald-600 hover:bg-emerald-500 rounded-full flex items-center justify-center shadow-lg shadow-emerald-600/40 transition-transform hover:scale-110">
+    <i class="fab fa-whatsapp text-white text-2xl"></i>
+  </div>
+</a>
+
+
+<!-- ==============================
+     JAVASCRIPT
+     ============================== -->
+<script>
+  // 1. Mobile Menu Toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    const isHidden = mobileMenu.classList.toggle('hidden');
+    hamburger.innerHTML = isHidden
+      ? '<i class="fa fa-bars text-xl"></i>'
+      : '<i class="fa fa-xmark text-xl"></i>';
+  });
+
+  // 2. Category Pill Active Toggle
+  const pills = document.querySelectorAll('.category-pill');
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => {
+        p.classList.remove('pill-active');
+        p.classList.add('text-slate-600');
+      });
+      pill.classList.add('pill-active');
+      pill.classList.remove('text-slate-600');
+    });
+  });
+
+  // 3. Product Search Filter
+  const searchInput = document.getElementById('search-input');
+  const productsGrid = document.getElementById('products-grid');
+  const productCards = productsGrid.querySelectorAll('.product-card');
+  const noResults = document.getElementById('no-results');
+  const searchSummary = document.getElementById('search-summary');
+
+  function filterProducts() {
+    const query = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    productCards.forEach(card => {
+      const searchData = card.getAttribute('data-search') || '';
+      const name = card.querySelector('h3')?.textContent?.toLowerCase() || '';
+      const combined = searchData + ' ' + name;
+
+      if (!query || combined.includes(query)) {
+        card.style.display = '';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (query) {
+      searchSummary.textContent = `Showing ${visibleCount} result${visibleCount !== 1 ? 's' : ''} for "${searchInput.value.trim()}"`;
+      searchSummary.classList.remove('hidden');
+    } else {
+      searchSummary.classList.add('hidden');
+    }
+
+    noResults.classList.toggle('hidden', visibleCount > 0);
+  }
+
+  searchInput.addEventListener('input', filterProducts);
+
+  // 4. FAQ Accordion
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const trigger = item.querySelector('.faq-trigger');
+    const answer = item.querySelector('.faq-answer');
+    const icon = trigger.querySelector('i');
+
+    trigger.addEventListener('click', () => {
+      const isOpen = answer.classList.contains('open');
+
+      // Close all
+      faqItems.forEach(fi => {
+        fi.querySelector('.faq-answer').classList.remove('open');
+        fi.querySelector('.faq-trigger i').style.transform = 'rotate(0deg)';
+        fi.querySelector('.faq-trigger').classList.remove('bg-dell-50');
+      });
+
+      // Open clicked if it was closed
+      if (!isOpen) {
+        answer.classList.add('open');
+        icon.style.transform = 'rotate(180deg)';
+        trigger.classList.add('bg-dell-50');
+      }
+    });
+  });
+
+  // 5. Mobile Filter Toggle
+  const mobileFilterBtn = document.getElementById('mobile-filter-btn');
+  const mobileFilterPanel = document.getElementById('mobile-filter-panel');
+  if (mobileFilterBtn && mobileFilterPanel) {
+    mobileFilterBtn.addEventListener('click', () => {
+      const hidden = mobileFilterPanel.classList.toggle('hidden');
+      mobileFilterBtn.innerHTML = hidden
+        ? '<i class="fa fa-sliders mr-2"></i> Show Filters'
+        : '<i class="fa fa-xmark mr-2"></i> Hide Filters';
+    });
+  }
+
+  // 6. Price Slider Display
+  const priceSlider = document.getElementById('price-slider');
+  const priceDisplay = document.getElementById('price-display');
+  if (priceSlider && priceDisplay) {
+    priceSlider.addEventListener('input', () => {
+      const val = parseInt(priceSlider.value);
+      priceDisplay.textContent = '₹' + val.toLocaleString('en-IN');
+    });
+  }
+</script>
+
+</body>
+</html>
